@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private bool isGrounded;
     [SerializeField] private float maxSlopeAngle = 60f;
 
-    //public Animator animator;
+    public Animator animator;
 
     private Rigidbody2D body;
     private ContactFilter2D groundFilter;
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public void OnJump () {
         jumpInput = true;
-        //animator.SetBool("IsJumping", true);
+        animator.SetBool("IsJumping", true);
     }
 
     
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour {
         SlopeCheck();
 
         
-        //animator.SetFloat("Speed", Mathf.Abs(movementInput.x));
+        animator.SetFloat("Speed", Mathf.Abs(movementInput.x));
 
         if (!isGrounded)
         {
@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour {
         if (isGrounded)
         {
             extraJump = extraJumpValue;
-            //animator.SetBool("IsJumping", false);
+            animator.SetBool("IsJumping", false);
         }
 
         if (jumpInput && isGrounded)
@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         jumpInput = false;
-        //animator.SetBool("IsJumping", false);
+        animator.SetBool("IsJumping", false);
         // Я изменил движение на изменение скорости обьекта, чтобы это работало нужно поставить
         // параметр Linear Damp в значение 50 у вашего RigidBody.
         body.velocity += (movementDirection * speed + gravityVelocity) * 10;
