@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour {
     
     public void OnMove (InputValue input) {
         movementInput = input.Get<Vector2>();
+        //Debug.Log(movementInput);
     }
 
     private void FixedUpdate () {
