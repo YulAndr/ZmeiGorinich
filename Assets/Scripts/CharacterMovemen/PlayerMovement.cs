@@ -114,20 +114,26 @@ public class PlayerMovement : MonoBehaviour {
 
         if (movementInput.x > 0 && !isFacingRight)
         {
-            Flip();
+            //Flip();
+            transform.eulerAngles = new Vector3(0, 0, 0); // Flipped
+            isFacingRight = !isFacingRight;
+
         } else if (movementInput.x < 0 && isFacingRight)
         {
-            Flip();
+            //Flip();
+            transform.eulerAngles = new Vector3(0, 180, 0); // normal
+            isFacingRight = !isFacingRight;
         }
     }
 
-    void Flip () {
-        Vector3 currentScale = gameObject.transform.localScale;
-        currentScale.x *= -1;
-        gameObject.transform.localScale = currentScale;
+    //void Flip () {
+    //    transform.eulerAngles = new Vector3(0, 180, 0); // Flipped
+    //    Vector3 currentScale = gameObject.transform.localScale;
+    //    currentScale.x *= -1;
+    //    gameObject.transform.localScale = currentScale;
 
-        isFacingRight = !isFacingRight;
-    }
+    //    isFacingRight = !isFacingRight;
+    //}
 
     private void GroundCheck () {
         var count = groundCollider.OverlapCollider(groundFilter, collidesBuffer);
