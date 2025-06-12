@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     [Header("Speed Settings")]
     [SerializeField] private float speed = 10;
-    [SerializeField] private float speedJump = 10;
+    //[SerializeField] private float speedJump = 10;
 
     [Header("Gravity Settings")]
     [SerializeField] private LayerMask groundLayer;
@@ -25,9 +25,9 @@ public class PlayerMovement : MonoBehaviour {
     // Добавим поле для сохранения текущего обьекта под ногами персонажа
     private Rigidbody2D parent;
 
-    private bool jumpInput;
-    private int extraJump;
-    private int extraJumpValue = 1;
+    //private bool jumpInput;
+    //private int extraJump;
+    //private int extraJumpValue = 1;
 
     private Vector2 movementInput;
     private Vector2 gravityVelocity;
@@ -47,15 +47,14 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
-    public void OnJump () {
-        jumpInput = true;
-        animator.SetBool("IsJumping", true);
-    }
+    //public void OnJump () {
+    //    jumpInput = true;
+    //    animator.SetBool("IsJumping", true);
+    //}
 
     
     public void OnMove (InputValue input) {
         movementInput = input.Get<Vector2>();
-        //Debug.Log(movementInput);
     }
 
     private void FixedUpdate () {
@@ -75,22 +74,22 @@ public class PlayerMovement : MonoBehaviour {
 
         gravityVelocity.y = Mathf.Clamp(gravityVelocity.y, -20, 20);
 
-        if (isGrounded)
-        {
-            extraJump = extraJumpValue;
-            animator.SetBool("IsJumping", false);
-        }
+        //if (isGrounded)
+        //{
+        //    extraJump = extraJumpValue;
+        //    animator.SetBool("IsJumping", false);
+        //}
 
-        if (jumpInput && isGrounded)
-        {
-            gravityVelocity = speedJump * Vector2.up;
+        //if (jumpInput && isGrounded)
+        //{
+        //    gravityVelocity = speedJump * Vector2.up;
             
-        } else if (jumpInput && extraJump > 0)
-        {
-            gravityVelocity = speedJump * Vector2.up;
-            extraJump--;
+        //} else if (jumpInput && extraJump > 0)
+        //{
+        //    gravityVelocity = speedJump * Vector2.up;
+        //    extraJump--;
             
-        }
+        //}
 
         var movementDirection = movementInput;
         if (Mathf.Abs(movementInput.x) > 0.1f)
@@ -101,8 +100,9 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
 
-        jumpInput = false;
-        animator.SetBool("IsJumping", false);
+        //jumpInput = false;
+        //animator.SetBool("IsJumping", false);
+
         // Я изменил движение на изменение скорости обьекта, чтобы это работало нужно поставить
         // параметр Linear Damp в значение 50 у вашего RigidBody.
         body.velocity += (movementDirection * speed + gravityVelocity) * 10;
@@ -114,27 +114,15 @@ public class PlayerMovement : MonoBehaviour {
 
         if (movementInput.x > 0 && !isFacingRight)
         {
-            //Flip();
             transform.eulerAngles = new Vector3(0, 0, 0); // Flipped
             isFacingRight = !isFacingRight;
 
         } else if (movementInput.x < 0 && isFacingRight)
         {
-            //Flip();
             transform.eulerAngles = new Vector3(0, 180, 0); // normal
             isFacingRight = !isFacingRight;
         }
     }
-
-    //void Flip () {
-    //    transform.eulerAngles = new Vector3(0, 180, 0); // Flipped
-    //    Vector3 currentScale = gameObject.transform.localScale;
-    //    currentScale.x *= -1;
-    //    gameObject.transform.localScale = currentScale;
-
-    //    isFacingRight = !isFacingRight;
-    //}
-
     private void GroundCheck () {
         var count = groundCollider.OverlapCollider(groundFilter, collidesBuffer);
         isGrounded = count > 0;
