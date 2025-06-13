@@ -47,6 +47,11 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
+    private void Update () {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     //public void OnJump () {
     //    jumpInput = true;
     //    animator.SetBool("IsJumping", true);

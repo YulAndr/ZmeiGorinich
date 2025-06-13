@@ -19,6 +19,9 @@ public class CutScene1 : MonoBehaviour
         animator = GetComponent<Animator>();
     }
     private void Update () {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             currentIndex++;
