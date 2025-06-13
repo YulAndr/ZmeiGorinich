@@ -1949,7 +1949,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.43
+  orthographic size: 5.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1973,7 +1973,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472437040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.440001, y: 5.4560003, z: -10.0011}
+  m_LocalPosition: {x: -12.440001, y: 5.1800003, z: -10.0011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9805,6 +9805,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1803676006}
+    - target: {fileID: 6504963138490738507, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 5.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8634993359963188181, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
       propertyPath: m_Name
       value: Virtual Camera
@@ -9841,7 +9845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.37
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_LocalPosition.z
