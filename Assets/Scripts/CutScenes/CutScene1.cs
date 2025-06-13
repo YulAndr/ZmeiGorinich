@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class CutScene1 : MonoBehaviour
 {   
@@ -23,7 +24,8 @@ public class CutScene1 : MonoBehaviour
             currentIndex++;
             if (currentIndex >= messages.Count)
             {
-                currentIndex = 0; // или остановить показ, если нужно
+                SceneManager.LoadScene("Village");
+                //currentIndex = 0; // или остановить показ, если нужно
             }
             textComponent.text = messages[currentIndex];
             animator.SetTrigger("spaceTriggered");
