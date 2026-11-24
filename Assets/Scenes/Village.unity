@@ -205,7 +205,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &66845236
 GameObject:
@@ -290,7 +290,7 @@ Transform:
   m_Children:
   - {fileID: 1058926164}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &86315609
 PrefabInstance:
@@ -362,27 +362,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: "\u0425\u043C... \u0417\u0434\u0435\u0441\u044C \u0442\u0430\u043A\u0430\u044F
-        \u0436\u0435 \u0444\u0440\u0430\u0437\u0430 \u043A\u0430\u043A \u0438 \u0432
-        \u0437\u0430\u043F\u0438\u0441\u043A\u0435 \u0438, \u0441\u0443\u0434\u044F
-        \u043F\u043E \u0432\u0441\u0435\u043C\u0443, \u0435\u0449\u0435 \u0438 \u0441
-        \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u043E\u043C"
+      value: "\u0410 \u0432\u043E\u0442 \u0438 \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C.
+        \u0412\u0430\u0439\u0430\u043D\u043A\u0430 \u043D\u0435 \u043E\u0431\u043C\u0430\u043D\u0443\u043B\u0430."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: "\"\u042D\u0439 \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438
+      value: "\xAB\u042D\u0439 \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438
         \u0433\u0438\u0430\u043D\u0430\u0435, \u0437\u0443\u0433\u0434\u0438\u0442\u0438\u0442\u0438
-        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439...\""
+        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439...\xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "\"\u041F\u043E \u044D\u0442\u043E\u0439 \u0434\u043E\u0440\u043E\u0436\u043A\u0435
+      value: "\xAB\u041F\u043E \u044D\u0442\u043E\u0439 \u0434\u043E\u0440\u043E\u0436\u043A\u0435
         \u0448\u0430\u0433\u0430\u0439, \u043A \u043D\u0430\u0448\u0435\u043C\u0443
-        \u0434\u043E\u043C\u0443 \u043F\u0440\u0438\u0434\u0435\u0448\u044C...\""
+        \u0434\u043E\u043C\u0443 \u043F\u0440\u0438\u0434\u0451\u0448\u044C\xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].sentence
@@ -973,6 +970,100 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 472437040}
   parallax: 0.8
+--- !u!1 &225656202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225656204}
+  - component: {fileID: 225656203}
+  - component: {fileID: 225656205}
+  m_Layer: 0
+  m_Name: RightBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &225656203
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225656202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.1656914}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 11.17667}
+  m_EdgeRadius: 0
+--- !u!4 &225656204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225656202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 70.15, y: 4.030649, z: 1.8990561}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 616684707}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &225656205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225656202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b963549d6f50441b1f08083af03675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 3
+  interactionInput: 0
+  isInRange: 0
 --- !u!1 &243063894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,6 +1993,8 @@ GameObject:
   - component: {fileID: 472437041}
   - component: {fileID: 472437044}
   - component: {fileID: 472437045}
+  - component: {fileID: 472437046}
+  - component: {fileID: 472437047}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1952,7 +2045,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.43
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1976,11 +2069,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472437040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.440001, y: 5.4560003, z: -10.0011}
+  m_LocalPosition: {x: -10.6, y: 5.2, z: -10.0011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1273688168061346484}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2062,6 +2154,115 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!82 &472437046
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472437040}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c2dc9175e529d4348a145367f3ac2118, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &472437047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472437040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d73297cdbeab96438594f457f1b06dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio_: {fileID: 472437046}
 --- !u!1 &476200208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2659,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 472437040}
   parallax: 0.9
+--- !u!1 &542249739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542249741}
+  - component: {fileID: 542249740}
+  m_Layer: 0
+  m_Name: CameraLimits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &542249740
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542249739}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 84.73982, y: 5.837203}
+      - {x: -8.285099, y: 5.839405}
+      - {x: -8.229502, y: -4.9662623}
+      - {x: 84.76709, y: -5.129488}
+  m_UseDelaunayMesh: 0
+--- !u!4 &542249741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542249739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.713388, y: 5.0360074, z: 1.458397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &571721264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,6 +3008,109 @@ Transform:
   m_Father: {fileID: 2130439342}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &616684706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 225656204}
+    m_Modifications:
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1640167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Size.y
+      value: 7.0275803
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.08200836
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.43054104
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011988201399623206, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Name
+      value: Dialogue 2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: triggerState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "\u0425\u043C, \u0448\u0430\u043C\u0430\u043D \u0441\u043A\u0430\u0437\u0430\u043B,
+        \u0447\u0442\u043E \u0418\u0434\u043E\u0430\u043D\u0430 \u0443\u043A\u0430\u0436\u0435\u0442
+        \u043F\u0443\u0442\u044C. \u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044D\u0442\u043E
+        \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u0440\u0435\u043A\u0438.
+        \u0417\u043D\u0430\u0447\u0438\u0442, \u043D\u0443\u0436\u043D\u043E \u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u044C
+        \u0437\u0430 \u0440\u0435\u043A\u043E\u0439?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+--- !u!4 &616684707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+  m_PrefabInstance: {fileID: 616684706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &637187381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2794,6 +3179,283 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "\u0410 \u0432\u043E\u0442 \u043D\u0430\u043A\u043E\u043D\u0435\u0446-\u0442\u043E
+        \u0438 \u0442\u044B, \u043D\u0430\u04C8\u0433\u0438. \u042F \u0434\u0430\u0432\u043D\u043E
+        \u0442\u0435\u0431\u044F \u0436\u0434\u0443. \u042F \u0448\u0430\u043C\u0430\u043D
+        \u041A\u044F\u043E\u0441 \u0438\u0437 \u0440\u043E\u0434\u0430 \u041A\u044F,
+        \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C \u043F\u0440\u043E\u0441\u0442\u043E
+        \u0437\u0432\u0430\u0442\u044C \u043C\u0435\u043D\u044F \u0448\u0430\u043C\u0430\u043D\u043E\u043C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[1].sentence
+      value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438, \u0448\u0430\u043C\u0430\u043D!
+        \u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442 \u0410\u0439\u043B\u0438\u043D.
+        \u041E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u043E
+        \u0441 \u0412\u0430\u043C\u0438 \u043F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[2].sentence
+      value: "\u0425\u043E\u0442\u0435\u043B\u0430 \u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C,
+        \u0437\u0430\u0447\u0435\u043C \u0432\u044B \u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0438
+        \u043C\u043D\u0435 \u0437\u0430\u043F\u0438\u0441\u043A\u0443, \u043F\u043E\u0447\u0435\u043C\u0443
+        \u0431\u044B \u043D\u0435 \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C
+        \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E, \u0447\u0442\u043E \u0432\u044B
+        \u0445\u043E\u0442\u0435\u043B\u0438 \u0441\u043E \u043C\u043D\u043E\u0439
+        \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[3].sentence
+      value: "\u0414\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u0430 \u043C\u043D\u0435
+        \u043D\u0443\u0436\u043D\u043E \u0431\u044B\u043B\u043E \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0441\u044F,
+        \u0447\u0442\u043E \u0442\u044B \u0442\u0430, \u043A\u0442\u043E \u043C\u043D\u0435
+        \u043D\u0443\u0436\u0435\u043D. \u041A \u0442\u043E\u043C\u0443 \u0436\u0435
+        \u0437\u043D\u0430\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0435
+        \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430, \u043C\u043E\u0433\u0443\u0442
+        \u0442\u0435\u0431\u0435 \u0435\u0449\u0451 \u043F\u0440\u0438\u0433\u043E\u0434\u0438\u0442\u0441\u044F."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "\u0422\u0430, \u043A\u0442\u043E \u0432\u0430\u043C \u043D\u0443\u0436\u0435\u043D?
+        \u0411\u043E\u044E\u0441\u044C, \u0447\u0442\u043E \u044F \u043D\u0435 \u0441\u043E\u0432\u0441\u0435\u043C
+        \u0432\u0430\u0441 \u043F\u043E\u043D\u0438\u043C\u0430\u044E. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[5].sentence
+      value: "\u0422\u044B \u0432\u0435\u0434\u044C \u043F\u0440\u0438\u0435\u0445\u0430\u043B\u0430
+        \u0441\u044E\u0434\u0430, \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u043E\u0432\u0435\u0441\u0442\u0438
+        \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435
+        \u043E \u043D\u0430\u0448\u0435\u0439 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0435,
+        \u0443 \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C \u0442\u043E, \u0447\u0442\u043E
+        \u0442\u0435\u0431\u0435 \u043D\u0443\u0436\u043D\u043E \u2013 \u044D\u0442\u043E
+        \u0437\u0430\u043C\u0435\u0442\u043A\u0438 \u043C\u043E\u0438\u0445 \u043F\u0440\u0435\u0434\u0448\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A\u043E\u0432."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[6].sentence
+      value: "\u041D\u043E \u044F \u043D\u0435 \u043C\u043E\u0433\u0443 \u043E\u0442\u0434\u0430\u0442\u044C
+        \u0438\u0445 \u043F\u0440\u043E\u0441\u0442\u043E \u0442\u0430\u043A \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
+        \u043C\u0430\u043B\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u043E\u0439
+        \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u0438\u0446\u0435.
+        \u042F \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u044E \u0442\u0435\u0431\u0435
+        \u043E\u0431\u043C\u0435\u043D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentence
+      value: "\u041D\u0435 \u0434\u0443\u043C\u0430\u044E, \u0447\u0442\u043E \u0443
+        \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C \u0447\u0442\u043E-\u0442\u043E,
+        \u0447\u0442\u043E \u043C\u043E\u0433\u043B\u043E \u0431\u044B \u0432\u0430\u0441
+        \u0437\u0430\u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043E\u0432\u0430\u0442\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[8].sentence
+      value: "\u041F\u043E\u043A\u0430 \u043D\u0435\u0442, \u043D\u043E \u0442\u044B
+        \u043C\u043E\u0436\u0435\u0448\u044C \u044D\u0442\u043E \u0434\u043E\u0441\u0442\u0430\u0442\u044C.
+        \u0422\u043E\u043B\u0438, \u043F\u0440\u0438\u043D\u0435\u0441\u0438 \u043C\u043D\u0435
+        \u0435\u0433\u043E. \u042D\u0442\u043E \u043C\u0435\u0434\u043D\u043E\u0435
+        \u0437\u0435\u0440\u043A\u0430\u043B\u043E, \u043A\u043E\u0442\u043E\u0440\u043E\u0435
+        \u0441\u043F\u0440\u044F\u0442\u0430\u043D\u043E \u0432 \u043F\u0435\u0449\u0435\u0440\u0435
+        \u0442\u0438\u0433\u0440\u043E\u0432, \u0447\u0442\u043E \u043D\u0430 \u0433\u043E\u0440\u0435
+        \u041B\u0430\u043E-\u0445\u0443\u0442\u0443\u043D."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[9].sentence
+      value: "\u0421\u0430\u043C \u044F \u0443\u0439\u0442\u0438 \u043D\u0435 \u043C\u043E\u0433\u0443,
+        \u0434\u0430 \u0438 \u0432\u043E\u0439\u0442\u0438 \u0432 \u043F\u0435\u0449\u0435\u0440\u0443
+        \u0431\u0440\u0430\u0442\u044C\u0435\u0432-\u0442\u0438\u0433\u0440\u043E\u0432
+        \u043C\u043E\u0436\u0435\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u043D\u0430\u04C8\u0433\u0438
+        (\u0447\u0443\u0436\u0430\u043A), \u0442\u0430\u043A\u043E\u0432 \u0443\u0436
+        \u0437\u0430\u043A\u043E\u043D. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[10].sentence
+      value: "\u0414\u0430, \u044F \u0441\u043B\u044B\u0448\u0430\u043B\u0430 \u043F\u0440\u043E
+        \u0433\u043E\u0440\u0443 \u041B\u0430\u043E-\u0445\u0443\u0442\u0443\u043D
+        \u0438 \u043F\u0440\u043E \u043F\u0435\u0449\u0435\u0440\u0443, \u0432 \u043A\u043E\u0442\u043E\u0440\u043E\u0439
+        \u0445\u0440\u0430\u043D\u044F\u0442\u0441\u044F \u043D\u0435\u0441\u043C\u0435\u0442\u043D\u044B\u0435
+        \u0441\u043E\u043A\u0440\u043E\u0432\u0438\u0449\u0430. \u041D\u043E \u0440\u0430\u0437\u0432\u0435
+        \u044D\u0442\u043E \u043D\u0435 \u0432\u044B\u0434\u0443\u043C\u043A\u0430?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[11].sentence
+      value: "\u041D\u0435\u0442, \u043F\u0435\u0449\u0435\u0440\u0430 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442,
+        \u043F\u0440\u0430\u0432\u0434\u0430 \u043D\u0438\u043A\u0430\u043A\u0438\u0445
+        \u0441\u043E\u043A\u0440\u043E\u0432\u0438\u0449 \u0442\u0430\u043C \u0443\u0436
+        \u0441\u043E\u0442\u043D\u0438 \u043B\u0443\u043D \u043A\u0430\u043A \u043D\u0435\u0442,
+        \u043D\u043E \u0437\u0435\u0440\u043A\u0430\u043B\u043E \u0432\u0441\u0451
+        \u0435\u0449\u0451 \u0442\u0430\u043C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[12].sentence
+      value: "\u041D\u043E \u043A\u0430\u043A \u0436\u0435 \u044F \u043D\u0430\u0439\u0434\u0443
+        \u0432\u0445\u043E\u0434 \u0442\u0443\u0434\u0430? \u0412\u0435\u0434\u044C
+        \u043F\u043E \u043F\u0440\u0435\u0434\u0430\u043D\u0438\u044E \u043E\u043D
+        \u0445\u043E\u0440\u043E\u0448\u043E \u0441\u043A\u0440\u044B\u0442 \u043E\u0442
+        \u043B\u044E\u0434\u0441\u043A\u0438\u0445 \u0433\u043B\u0430\u0437. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[13].sentence
+      value: "\u0422\u043E\u043B\u044C\u043A\u043E \u0435\u0441\u043B\u0438 \u0442\u044B
+        \u043F\u0440\u0438\u043D\u0435\u0441\u0451\u0448\u044C \u0435\u0433\u043E
+        \u043C\u043D\u0435, \u0442\u044B \u0441\u043C\u043E\u0436\u0435\u0448\u044C
+        \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0437\u0430\u043F\u0438\u0441\u0438
+        \u0438 \u0437\u0430\u0434\u0430\u0442\u044C \u043C\u043D\u0435 \u043B\u044E\u0431\u044B\u0435
+        \u0432\u043E\u043F\u0440\u043E\u0441\u044B."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[14].sentence
+      value: "\xAB\u0422\u0438\u0445\u0430\u044F \u0418\u0434\u043E\u0430\u043D\u0430
+        \u0443\u043A\u0430\u0436\u0435\u0442 \u043F\u0443\u0442\u044C, \u0441\u043B\u0435\u0434\u0443\u0439
+        \u0437\u0430 \u0448\u0435\u043F\u043E\u0442\u043E\u043C \u043B\u0435\u0441\u0430
+        \u043A \u0434\u043E\u043C\u0443 \u0434\u0443\u0445\u043E\u0432, \u0433\u0434\u0435
+        \u0447\u0435\u0442\u044B\u0440\u0435 \u043F\u043E\u043B\u043E\u0441\u0430\u0442\u044B\u0445
+        \u0441\u0442\u0440\u0430\u0436\u0430 \u043E\u0445\u0440\u0430\u043D\u044F\u044E\u0442
+        \u0442\u0430\u0439\u043D\u044B\xBB."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[15].sentence
+      value: "\u042D\u0442\u043E \u0432\u0441\u0451, \u0447\u0442\u043E \u044F \u043C\u043E\u0433\u0443
+        \u0442\u0435\u0431\u0435 \u0441\u043A\u0430\u0437\u0430\u0442\u044C \u043E
+        \u043C\u0435\u0441\u0442\u043E\u043D\u0430\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u0438
+        \u043F\u0435\u0449\u0435\u0440\u044B. \u0410 \u0442\u0435\u043F\u0435\u0440\u044C
+        \u0441\u043A\u0430\u0436\u0438 \u043C\u043D\u0435, \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u0430
+        \u043B\u0438 \u0442\u044B \u043F\u0440\u0438\u043D\u044F\u0442\u044C \u0441\u0432\u043E\u044E
+        \u0441\u0443\u0434\u044C\u0431\u0443, \u0432\u0435\u0434\u044C \u043F\u0443\u0442\u044C
+        \u0442\u0432\u043E\u0439 \u0431\u0443\u0434\u0435\u0442 \u043D\u0435\u043F\u0440\u043E\u0441\u0442
+        \u0438 \u043E\u043F\u0430\u0441\u0435\u043D?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[16].sentence
+      value: "\u0414\u0430, \u044F \u0433\u043E\u0442\u043E\u0432\u0430 \u0440\u0438\u0441\u043A\u043D\u0443\u0442\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[17].sentence
+      value: "\u0422\u043E\u0433\u0434\u0430 \u043D\u0430\u043F\u043E\u0441\u043B\u0435\u0434\u043E\u043A
+        \u043F\u043E\u0437\u0432\u043E\u043B\u044C \u043C\u043D\u0435 \u0431\u043B\u0430\u0433\u043E\u0441\u043B\u043E\u0432\u0438\u0442\u044C
+        \u0442\u0435\u0431\u044F \u0438 \u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u0441\u0438\u043B\u0443 \u043E\u0434\u043D\u043E\u0433\u043E
+        \u0438\u0437 \u043C\u043E\u0438\u0445 \u0441\u044D\u0432\u044D\u0445\u043E\u0432."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[18].sentence
+      value: "\u0412\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0438 \u043E\u0440\u043B\u0438\u043D\u043E\u0435
+        \u043F\u0435\u0440\u043E, \u0441\u0432\u044F\u0437\u0430\u043D\u043D\u043E\u0435
+        \u0441 \u0441\u044D\u0432\u044D\u0445\u043E\u043C, \u0434\u0443\u0445\u043E\u043C-\u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\u043E\u043C
+        \u0448\u0430\u043C\u0430\u043D\u0430."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[19].sentence
+      value: "\u0425\u043E\u0440\u043E\u0448\u043E, \u0441\u043F\u0430\u0441\u0438\u0431\u043E!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[20].sentence
+      value: "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u0441\u0442\u0443\u043F\u0430\u0439."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].sentence
+      value: "\u0414\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[22].sentence
+      value: "\u041E\u0447\u0435\u043D\u044C \u043D\u0430 \u044D\u0442\u043E \u043D\u0430\u0434\u0435\u044E\u0441\u044C,
+        \u043D\u0430\u04C8\u0433\u0438."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[1].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[2].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[3].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[4].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[5].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[6].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[8].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[9].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[10].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[11].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[12].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[13].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[14].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[15].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[16].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[17].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[18].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c6c706c31914484b8b6edb3ae3c5639, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[19].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[20].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[22].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a603162d364a342a240fb6113c7da3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2903,6 +3565,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 472437040}
   parallax: 0.5
+--- !u!1 &669879653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669879655}
+  - component: {fileID: 669879654}
+  - component: {fileID: 669879656}
+  m_Layer: 0
+  m_Name: Virtual Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &669879654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669879653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 1803676006}
+  m_Lens:
+    FieldOfView: 60
+    OrthographicSize: 5
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 1649526332}
+--- !u!4 &669879655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669879653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.6, y: 5.2, z: -10.0011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1649526332}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669879656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669879653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 542249740}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &681743251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +3739,136 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &734083718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734083721}
+  - component: {fileID: 734083720}
+  - component: {fileID: 734083719}
+  m_Layer: 6
+  m_Name: Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &734083719
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734083718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.4810791}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.962158}
+  m_EdgeRadius: 0
+--- !u!212 &734083720
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734083718}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &734083721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734083718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.0505, y: 0.03, z: 0}
+  m_LocalScale: {x: 102.39091, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752451438
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,6 +5239,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
+--- !u!1001 &978362234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1531102848}
+    m_Modifications:
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2590427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Size.y
+      value: 6.143843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12952137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573311338308011884, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.12952113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011988201399623206, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_Name
+      value: Dialogue 2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: triggerState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "\u042F \u043D\u0435 \u043C\u043E\u0433\u0443 \u0441\u0435\u0439\u0447\u0430\u0441
+        \u0443\u0435\u0445\u0430\u0442\u044C. \u041C\u043D\u0435 \u043D\u0443\u0436\u043D\u043E
+        \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u0442\u044C \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[0].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
 --- !u!4 &1058926164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
@@ -4649,110 +5626,110 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentence
       value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438! \u041C\u0435\u043D\u044F
-        \u0437\u043E\u0432\u0443\u0442 \u0410\u0439\u043B\u0438\u043D. \u042F \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0441\u044C
-        \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F\u043C\u0438
-        \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u043E\u0433\u043E \u044F\u0437\u044B\u043A\u0430
-        \u0438 \u0442\u0430\u043A\u0436\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u044E\u0441\u044C
-        \u0412\u0430\u0448\u0438\u043C \u0431\u044B\u0442\u043E\u043C, \u044F \u0445\u043E\u0442\u0435\u043B\u0430
-        \u0431\u044B \u0437\u0430\u0434\u0430\u0442\u044C \u0412\u0430\u043C \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
-        \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432.\n"
+        \u0437\u043E\u0432\u0443\u0442 \u0410\u0439\u043B\u0438\u043D. \u042F \u0438\u0441\u0441\u043B\u0435\u0434\u0443\u044E
+        \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A
+        \u0438 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0443. \u042F \u0437\u0434\u0435\u0441\u044C
+        \u043F\u043E \u043F\u0440\u0438\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u044E
+        \u0412\u0430\u0439\u0430\u043D\u043A\u0438. \u041C\u043E\u0433\u0443 \u044F
+        \u0437\u0430\u0434\u0430\u0442\u044C \u0432\u0430\u043C \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[1].sentence
       value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438, \u043D\u0430\u04C8\u0433\u0438.
         \u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442 \u041B\u0430\u0441\u0441\u0430.
-        \u041C\u043E\u0436\u0435\u0442\u0435, \u043D\u043E \u043C\u043D\u0435 \u043E\u0441\u043E\u0431\u043E
-        \u043D\u0435\u0447\u0435\u0433\u043E \u0432\u0430\u043C \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C.\r"
+        \u041D\u0443, \u0440\u0430\u0437 \u0432\u0430\u0441 \u043F\u0440\u0438\u0433\u043B\u0430\u0441\u0438\u043B\u0430
+        \u0412\u0430\u0439\u0430\u043D\u043A\u0430, \u0442\u043E\u0433\u0434\u0430
+        \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0439\u0442\u0435, \u043D\u043E
+        \u043C\u043D\u0435 \u043E\u0441\u043E\u0431\u043E \u043D\u0435\u0447\u0435\u0433\u043E
+        \u0432\u0430\u043C \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "\u0427\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442 \"\u043D\u0430\u04C8\u0433\u0438\"?"
+      value: "\u043D\u0430\u04C8\u0433\u0438?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u041D\u0430\u04C8\u0433\u0438 \u2013 \u044D\u0442\u043E \u0447\u0443\u0436\u0430\u043A
-        \u043F\u043E-\u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438. \u0414\u043B\u044F
-        \u043D\u0430\u0441 \u0432\u0441\u0435, \u043A\u0442\u043E \u043D\u0435 \u043F\u0440\u0438\u043D\u0430\u0434\u043B\u0435\u0436\u0430\u0442
-        \u043A \u043D\u0430\u0448\u0435\u0439 \u043E\u0431\u0449\u0438\u043D\u0435
-        \u0447\u0443\u0436\u0430\u043A\u0438."
+      value: "\u043D\u0430\u04C8\u0433\u0438, \u0442\u043E \u0435\u0441\u0442\u044C
+        \u0447\u0443\u0436\u0430\u043A."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[4].sentence
-      value: "\u0411\u0443\u0434\u0443 \u0438\u043C\u0435\u0442\u044C \u044D\u0442\u043E
-        \u0432 \u0432\u0438\u0434\u0443. \u0418\u0442\u0430\u043A, \u043A\u0430\u043A\u043E\u0433\u043E
-        \u0412\u0430\u0448\u0435 \u043C\u0435\u0441\u0442\u043E \u0432 \u043E\u0431\u0449\u0438\u043D\u0435?
-        \u0412\u044B \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442\u0435\u0441\u044C
-        \u0447\u0435\u043C-\u0442\u043E \u043A\u0440\u043E\u043C\u0435 \u0432\u0435\u0434\u0435\u043D\u0438\u044F
-        \u0434\u043E\u043C\u0430\u0448\u043D\u0435\u0433\u043E \u0445\u043E\u0437\u044F\u0439\u0441\u0442\u0432\u0430
-        \u0438\u043B\u0438 \u044D\u0442\u043E \u0443\u0436\u0435 \u043F\u0435\u0440\u0435\u0436\u0438\u0442\u043A\u0438
-        \u043F\u0440\u043E\u0448\u043B\u043E\u0433\u043E, \u0447\u0442\u043E \u043C\u0443\u0436\u0447\u0438\u043D\u044B
-        \u043E\u0445\u043E\u0442\u044F\u0442\u0441\u044F, \u0430 \u0436\u0435\u043D\u0449\u0438\u043D\u044B
-        \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0442\u0441\u044F \u0431\u044B\u0442\u043E\u043C?"
+      value: "\u0412\u044B \u0445\u043E\u0440\u043E\u0448\u043E \u0437\u043D\u0430\u0435\u0442\u0435
+        \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[5].sentence
-      value: "\u0412 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u043C \u0436\u0435\u043D\u0449\u0438\u043D\u044B
-        \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0442\u0441\u044F \u0442\u0435\u043C,
-        \u0447\u0442\u043E \u0440\u0430\u0441\u0442\u044F\u0442 \u0434\u0435\u0442\u0435\u0439,
-        \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0442\u0441\u044F \u0445\u043E\u0437\u044F\u0439\u0441\u0442\u0432\u043E\u043C,
-        \u0448\u044C\u044E\u0442 \u043E\u0434\u0435\u0436\u0434\u0443. \u042F \u0440\u0435\u0437\u0447\u0438\u043A,
-        \u0437\u0430\u043D\u0438\u043C\u0430\u044E\u0441\u044C \u0442\u0435\u043C,
-        \u0447\u0442\u043E \u0432\u044B\u0440\u0435\u0437\u0430\u044E \u043D\u0430
-        \u0431\u0435\u0440\u0435\u0441\u0442\u0435."
+      value: "\u041D\u0435 \u043E\u0441\u043E\u0431\u043E, \u0442\u043E\u043B\u044C\u043A\u043E
+        \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u043B\u043E\u0432\u0430.
+        \u0423\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u043C
+        \u043F\u043E\u043C\u043D\u044F\u0442 \u0442\u043E\u043B\u044C\u043A\u043E
+        \u0441\u0442\u0430\u0440\u0438\u043A\u0438, \u0434\u0430 \u0448\u0430\u043C\u0430\u043D
+        \u043D\u0430\u0448 \u0441 \u0435\u0433\u043E \u0441\u0435\u043C\u044C\u0451\u0439.
+        \u0412\u0430\u043C \u0431\u044B \u0441 \u043D\u0438\u043C\u0438 \u043B\u0443\u0447\u0448\u0435
+        \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C \u043D\u0430
+        \u044D\u0442\u043E\u0442 \u0441\u0447\u0451\u0442."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[6].sentence
-      value: "\u041D\u0430 \u043A\u0430\u043A\u043E\u043C \u044F\u0437\u044B\u043A\u0435
-        \u0412\u044B \u043E\u0431\u0449\u0430\u0435\u0442\u0435\u0441\u044C \u043C\u0435\u0436\u0434\u0443
-        \u0441\u043E\u0431\u043E\u0439? "
+      value: "\u041A \u043F\u0438\u0441\u044C\u043C\u0443 \u0412\u0430\u0439\u0430\u043D\u043A\u0438
+        \u0435\u0449\u0451 \u043F\u0440\u0438\u043B\u0430\u0433\u0430\u043B\u0430\u0441\u044C
+        \u0437\u0430\u043F\u0438\u0441\u043A\u0430 \u043D\u0430 \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u043E\u043C.
+        \u041C\u043E\u0436\u0435\u0442 \u0441\u043C\u043E\u0436\u0435\u0442\u0435
+        \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u0430\u0442\u044C, \u043E \u0447\u0451\u043C
+        \u043E\u043D\u0430? \u0425\u043E\u0442\u044F \u0431\u044B \u043E\u0431\u0449\u0438\u0439
+        \u0441\u043C\u044B\u0441\u043B."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[7].sentence
-      value: "\u041D\u0430 \u0440\u0443\u0441\u0441\u043A\u043E\u043C, \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439
-        \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F
-        \u0440\u0435\u0434\u043A\u043E."
+      value: "\u0414\u0430\u0432\u0430\u0439\u0442\u0435, \u043D\u043E \u043D\u0435
+        \u043E\u0431\u0435\u0449\u0430\u044E, \u0447\u0442\u043E \u0441\u043C\u043E\u0433\u0443
+        \u043F\u043E\u043C\u043E\u0447\u044C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[8].sentence
-      value: "\u0421 \u043F\u0438\u0441\u044C\u043C\u043E\u043C \u0412\u0430\u0439\u0430\u043D\u043A\u0438
-        \u044F \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430 \u0441\u0442\u0440\u0430\u043D\u043D\u0443\u044E
-        \u0437\u0430\u043F\u0438\u0441\u043A\u0443 \u043D\u0430 \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u043E\u043C,
-        \u043D\u043E \u044F \u043D\u0435 \u043C\u043E\u0433\u0443 \u0440\u0430\u0441\u0448\u0438\u0444\u0440\u043E\u0432\u0430\u0442\u044C
-        \u0435\u0451 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435. \u041C\u043E\u0436\u0435\u0442
-        \u0431\u044B\u0442\u044C, \u0412\u044B \u043C\u043E\u0433\u043B\u0438 \u0431\u044B
-        \u0432\u0437\u0433\u043B\u044F\u043D\u0443\u0442\u044C \u0438 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u0430\u0442\u044C
-        \u043C\u043D\u0435, \u0447\u0442\u043E \u0437\u0434\u0435\u0441\u044C \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043E?\r"
+      value: "\xAB\u042D\u0439 \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438
+        \u0433\u0438\u0430\u043D\u0430\u0435, \u0437\u0443\u0433\u0434\u0438\u0442\u0438\u0442\u0438
+        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439\xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].sentence
-      value: "\u042F \u043D\u0435 \u043E\u0447\u0435\u043D\u044C \u0445\u043E\u0440\u043E\u0448\u043E
-        \u0437\u043D\u0430\u044E \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439,
-        \u043D\u043E \u043C\u043E\u0433\u0443 \u043F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C."
+      value: "\u0418\u0437 \u0441\u043B\u043E\u0432 \u0442\u043E\u043B\u044C\u043A\u043E
+        \u0444\u0440\u0430\u0437\u0430 \xAB\u042D\u0439 \u0445\u043E\u043A\u0442\u043E
+        \u0446\u0443\u043B\u0438\u043D\u0438\xBB \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+        \u0437\u043D\u0430\u043A\u043E\u043C\u043E\u0439. \u0417\u0434\u0435\u0441\u044C
+        \u0447\u0442\u043E-\u0442\u043E \u043F\u0440\u043E \u0434\u043E\u0440\u043E\u0433\u0443
+        \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u0441\u044F, \u043D\u0435 \u043C\u043E\u0433\u0443
+        \u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0442\u043E\u0447\u043D\u0435\u0435."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[10].sentence
-      value: "\xAB\u042D\u0439 \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438
-        \u0433\u0438\u0430\u043D\u0430\u0435, \u0437\u0443\u0433\u0434\u0438\u0442\u0438\u0442\u0438
-        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439\xBB..."
+      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].sentence
-      value: "\u0425\u043C, \u0432\u0441\u044E \u0444\u0440\u0430\u0437\u0443 \u043F\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438
-        \u043D\u0435 \u0441\u043C\u043E\u0433\u0443, \u043D\u043E \xAB\u042D\u0439
-        \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438\xBB \u2013
-        \u043F\u043E \u044D\u0442\u043E\u0439 \u0434\u043E\u0440\u043E\u0433\u0435.
-        \u041F\u043E \u043A\u0430\u043A\u043E\u0439 \u0434\u043E\u0440\u043E\u0433\u0435
-        \u043D\u0435 \u0437\u043D\u0430\u044E, \u044D\u0442\u043E \u0432\u0430\u0441
-        \u0441\u0430\u043C\u043E\u0439 \u043D\u0443\u0436\u043D\u043E \u0432\u044B\u044F\u0441\u043D\u0438\u0442\u044C."
+      value: "\u0410 \u0447\u0435\u043C \u0432\u044B \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442\u0435\u0441\u044C
+        \u0432 \u043E\u0431\u0449\u0438\u043D\u0435?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].sentence
-      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435!"
+      value: "\u041F\u043E \u0431\u0435\u0440\u0435\u0441\u0442\u0435 \u0440\u0435\u0436\u0443.
+        \u041F\u0440\u0430\u0431\u0430\u0431\u043A\u0430 \u043C\u0435\u043D\u044F
+        \u043D\u0430\u0443\u0447\u0438\u043B\u0430. \u0420\u0435\u0437\u044C\u0431\u0430
+        \u043D\u0435 \u0441\u0430\u043C\u043E\u0435 \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0451\u043D\u043D\u043E\u0435
+        \u0437\u0430\u043D\u044F\u0442\u0438\u0435 \u0441\u0440\u0435\u0434\u0438
+        \u0436\u0435\u043D\u0449\u0438\u043D, \u043D\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044E\u0442\u0441\u044F
+        \u0435\u0449\u0451 \u043C\u0430\u0441\u0442\u0435\u0440\u0438\u0446\u044B."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[13].sentence
+      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u0443\u0434\u0435\u043B\u0438\u043B\u0438
+        \u0432\u0440\u0435\u043C\u044F!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
@@ -4789,7 +5766,7 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[8].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 246d6b75b8587574cb022b7a6a10f140, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].dialogueCharacter
       value: 
@@ -4801,11 +5778,23 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 246d6b75b8587574cb022b7a6a10f140, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].dialogueCharacter
       value: 
+      objectReference: {fileID: 11400000, guid: 246d6b75b8587574cb022b7a6a10f140, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[13].dialogueCharacter
+      value: 
       objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[12].sentenceEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[12].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5309,144 +6298,184 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.size
-      value: 21
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438! \u042F - \u0410\u0439\u043B\u0438\u043D,
-        \u0438\u0441\u0441\u043B\u0435\u0434\u0443\u044E \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0443
-        \u0438 \u0440\u0435\u0447\u044C \u0443\u0434\u044D\u0433\u0435\u0439\u0446\u0435\u0432.
-        \u0412\u044B \u043D\u0435 \u043F\u0440\u043E\u0442\u0438\u0432 \u0441\u043E
-        \u043C\u043D\u043E\u0439 \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C?"
+      value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438! \u041C\u0435\u043D\u044F
+        \u0437\u043E\u0432\u0443\u0442 \u0410\u0439\u043B\u0438\u043D, \u044F \u043F\u0440\u0438\u0435\u0445\u0430\u043B\u0430
+        \u0432 \u0432\u0430\u0448\u0435 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435
+        \u0441 \u0446\u0435\u043B\u044C\u044E \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F
+        \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u0443 \u0438 \u0440\u0435\u0447\u0438
+        \u0443\u0434\u044D\u0433\u0435\u0439\u0446\u0435\u0432. \u0412\u0430\u0439\u0430\u043D\u043A\u0430
+        \u043F\u0438\u0441\u0430\u043B\u0430, \u0447\u0442\u043E \u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0434\u0438\u043B\u0430
+        \u043E\u0431 \u044D\u0442\u043E\u043C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[1].sentence
-      value: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439-\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439!
-        \u041A\u0430\u043A \u0436\u0435 \u043D\u0435 \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
-        \u0441 \u0442\u0430\u043A\u043E\u0439 \u043B\u044E\u0431\u043E\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439
-        \u043E\u0441\u043E\u0431\u043E\u0439. \u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442
-        \u041B\u044F\u043D\u043A\u0443\u0439, \u043E\u0445\u043E\u0442\u043D\u0438\u043A
-        \u044F, \u0435\u0449\u0451 \u0437\u0438\u043C\u043E\u0439 \u0440\u044B\u0431\u0430\u0447\u0438\u0442\u044C
-        \u0445\u043E\u0436\u0443."
+      value: "\u041C\u043E\u0433\u0443 \u044F \u0437\u0430\u0434\u0430\u0442\u044C
+        \u0432\u0430\u043C \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "\u041A\u0430\u043A \u0437\u0434\u043E\u0440\u043E\u0432\u043E! \u0422\u043E\u043B\u044C\u043A\u043E
-        \u0432\u043E\u0442 \u043D\u0435 \u0432\u0438\u0434\u043D\u043E \u043D\u0438\u043A\u043E\u0433\u043E,
-        \u044D\u0442\u043E \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E?"
+      value: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439-\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439!
+        \u041A\u0430\u043A \u0436\u0435 \u043D\u0435 \u043E\u0442\u0432\u0435\u0442\u0438\u0442\u044C
+        \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u0442\u0430\u043A\u043E\u0439
+        \u043B\u044E\u0431\u043E\u0437\u043D\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0439
+        \u043E\u0441\u043E\u0431\u044B. \u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442
+        \u041B\u044F\u043D\u043A\u0443\u0439, \u044F \u043E\u0445\u043E\u0442\u043D\u0438\u043A
+        \u0438 \u0440\u044B\u0431\u0430\u043A."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u0422\u0430\u043A, \xAB\u0412\u0430: \u043A\u0447\u0430\u0439 \u043D\u0438\xBB
-        \u0436\u0435 \u0443 \u043D\u0430\u0441 \u0441\u043A\u043E\u0440\u043E, \u0432\u043E\u0442
-        \u0432\u0441\u0435 \u0438 \u0433\u043E\u0442\u043E\u0432\u044F\u0442\u0441\u044F,
+      value: "\u0423 \u0432\u0430\u0441 \u0432 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0438
+        \u043F\u0443\u0441\u0442\u043E \u0442\u0430\u043A, \u043F\u043E\u0447\u0442\u0438
+        \u043D\u0435 \u0432\u0438\u0434\u043D\u043E \u043D\u0438\u043A\u043E\u0433\u043E,
+        \u044D\u0442\u043E \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "\u0422\u0430\u043A, \u0438 \u043D\u0435 \u0443\u0434\u0438\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
+        \u0443 \u043D\u0430\u0441 \u0441\u043A\u043E\u0440\u043E \xAB\u0412\u0430:
+        \u043A\u0447\u0430\u0439 \u043D\u0438\xBB, \u0432\u043E\u0442 \u0432\u0441\u0435
+        \u043A \u043D\u0435\u043C\u0443 \u0438 \u0433\u043E\u0442\u043E\u0432\u044F\u0442\u0441\u044F,
         \u0441\u0435\u0439\u0447\u0430\u0441 \u0442\u044B \u043C\u0430\u043B\u043E
         \u043A\u043E\u0433\u043E \u043D\u0430\u0439\u0442\u0438 \u0441\u043C\u043E\u0436\u0435\u0448\u044C,
         \u043D\u0435 \u0434\u043E \u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440\u043E\u0432
         \u0438\u043C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[4].sentence
-      value: "\u0410 \u0447\u0442\u043E \u0437\u0430 \xAB\u0412\u0430: \u043A\u0447\u0430\u0439
-        \u043D\u0438\xBB \u0442\u0430\u043A\u043E\u0439?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[5].sentence
-      value: "\u041F\u0440\u0430\u0437\u0434\u043D\u0438\u043A \u044D\u0442\u043E
-        \u043D\u0430\u0448, \u0435\u0441\u043B\u0438 \u043D\u0430 \u0440\u0443\u0441\u0441\u043A\u0438\u0439
-        \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u0438\u0442\u044C, \u0442\u043E
-        \u0434\u0435\u043D\u044C \u041E\u0445\u043E\u0442\u043D\u0438\u043A\u0430.
-        \u041F\u043E \u043E\u0441\u0435\u043D\u0438 \u043D\u0430\u0441 \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u043E\u0432
-        \u043F\u0440\u043E\u0432\u043E\u0436\u0430\u044E\u0442 \u043D\u0430 \u043E\u0445\u043E\u0442\u0443,
-        \u0430 \u043F\u043E \u0432\u0435\u0441\u043D\u0435 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044E\u0442."
+      value: "\u0422\u043E\u0442 \u0441\u0430\u043C\u044B\u0439 \u0434\u0435\u043D\u044C
+        \u041E\u0445\u043E\u0442\u043D\u0438\u043A\u0430?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[6].sentence
-      value: "\u041E\u0434\u043D\u0430\u043A\u043E \u0447\u0430\u0441\u0442\u044C
-        \u0438\u0437 \u043D\u0430\u0441 \u043E\u0441\u0442\u0430\u043D\u0435\u0442\u0441\u044F,
+      value: "\u0414\u0430, \u0412\u0430: \u043A\u0447\u0430\u0439 \u043D\u0438 \u2013
+        \u044D\u0442\u043E \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A\u043E\u0432,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u044B \u0434\u043E \u0441\u0438\u0445
+        \u043F\u043E\u0440 \u043F\u0440\u0430\u0437\u0434\u043D\u0443\u0435\u043C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentence
+      value: "\u0417\u043D\u0430\u0435\u0448\u044C, \u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435,
+        \u0447\u0442\u043E \u043F\u043E \u043E\u0441\u0435\u043D\u0438 \u043D\u0430\u0441,
+        \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u043E\u0432, \u043F\u0440\u043E\u0432\u043E\u0436\u0430\u044E\u0442
+        \u043D\u0430 \u043E\u0445\u043E\u0442\u0443, \u0430 \u043F\u043E \u0432\u0435\u0441\u043D\u0435
+        \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044E\u0442."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[8].sentence
+      value: "\u041D\u043E \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435
+        \u0438\u0437 \u043D\u0430\u0441 \u043E\u0441\u0442\u0430\u044E\u0442\u0441\u044F,
         \u0447\u0442\u043E\u0431\u044B \u0437\u0430\u0449\u0438\u0449\u0430\u0442\u044C
         \u043E\u0431\u0449\u0438\u043D\u0443 \u043E\u0442 \u043D\u0435\u043F\u0440\u043E\u0448\u0435\u043D\u043D\u044B\u0445
         \u0433\u043E\u0441\u0442\u0435\u0439, \u0434\u0430 \u0438 \u0448\u0430\u043C\u0430\u043D
         \u043D\u0430\u0441 \u043E\u0431\u0435\u0440\u0435\u0433\u0430\u0435\u0442,
-        \u0442\u0430\u043A \u0447\u0442\u043E \u043D\u0430\u0448\u0435 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0435
-        \u0430\u0431\u0441\u043E\u043B\u044E\u0442\u043D\u043E \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[7].sentence
-      value: "\u0410 \u043A\u0430\u043A \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442
-        \xAB\u0412\u0430: \u043A\u0447\u0430\u0439 \u043D\u0438\xBB?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[8].sentence
-      value: "\u041F\u0435\u0440\u0435\u0434 \u0441\u0430\u043C\u0438\u043C \u043F\u0440\u0430\u0437\u0434\u043D\u0435\u0441\u0442\u0432\u043E\u043C
-        \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u044E\u0442
-        \u0441\u0432\u043E\u0451 \u043E\u0440\u0443\u0436\u0438\u0435 \u0438 \u043F\u043E\u043B\u0438\u0440\u0443\u044E\u0442
-        \u043B\u044B\u0436\u0438, \u0432 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u044F
-        \u0438\u0445 \u0436\u0451\u043D\u044B \u043F\u043E\u0434\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u044E\u0442
-        \u0438\u043C \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439 \u0437\u0430\u043F\u0430\u0441
-        \u0435\u0434\u044B \u0438 \u0432\u043E\u0434\u044B."
+        \u0442\u0430\u043A \u0447\u0442\u043E \u0437\u0434\u0435\u0441\u044C \u0430\u0431\u0441\u043E\u043B\u044E\u0442\u043D\u043E
+        \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E,  \u043D\u0435 \u043F\u0435\u0440\u0435\u0436\u0438\u0432\u0430\u0439."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].sentence
-      value: "\u0422\u0430\u043A\u0436\u0435 \u043A\u0430\u0436\u0434\u0430\u044F
-        \u0441\u0435\u043C\u044C\u044F \u0434\u043E\u043B\u0436\u043D\u0430 \u043F\u0440\u0435\u043F\u043E\u0434\u043D\u0435\u0441\u0442\u0438
-        \u043F\u043E \u043E\u0434\u043D\u043E\u043C\u0443 \u0431\u043B\u044E\u0434\u0443,
-        \u043E\u043D\u0438 \u043D\u0443\u0436\u043D\u044B, \u0447\u0442\u043E\u0431\u044B
-        \u0437\u0430\u0434\u043E\u0431\u0440\u0438\u0442\u044C \u0434\u0443\u0445\u043E\u0432.
-        \u041F\u043E\u0442\u043E\u043C \u0448\u0430\u043C\u0430\u043D \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u0442
-        \u043E\u0431\u0440\u044F\u0434 \u041A\u0430\u0441\u0438\u0433\u0430\u043B\u044B\u043C,
-        \u043D\u043E \u0447\u0442\u043E \u044D\u0442\u043E \u0437\u0430 \u043E\u0431\u0440\u044F\u0434
-        \u0441\u043A\u0430\u0437\u0430\u0442\u044C \u043D\u0435 \u043C\u043E\u0433\u0443,
-        \u0442\u0430\u043A \u0432\u0435\u043B\u0435\u043B \u043D\u0430\u0448 \u0448\u0430\u043C\u0430\u043D
-        \u041A\u044F\u043E\u0441, \u0430 \u043C\u044B \u0435\u0433\u043E \u0441\u043B\u0443\u0448\u0430\u0435\u043C\u0441\u044F."
+      value: "\u0414\u0430, \u0447\u0438\u0442\u0430\u043B\u0430, \u043D\u043E \u043D\u0430\u0434\u0435\u044E\u0441\u044C,
+        \u0447\u0442\u043E \u0438 \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C
+        \u0441\u043C\u043E\u0433\u0443. \u0410 \u0440\u0430\u0441\u0441\u043A\u0430\u0436\u0438\u0442\u0435,
+        \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u043E\u043F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435,
+        \u043A\u0430\u043A \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442 \u043E\u0441\u0435\u043D\u043D\u0438\u0439
+        \xAB\u0412\u0430: \u043A\u0447\u0430\u0439 \u043D\u0438\xBB?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[10].sentence
-      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E. \u0417\u043D\u0430\u0447\u0438\u0442
-        \u0412\u044B \u0432\u0441\u0451 \u0435\u0449\u0451 \u043F\u0440\u0438\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0435\u0441\u044C
-        \u0441\u0442\u0430\u0440\u044B\u0445 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0439?"
+      value: "\u041F\u0435\u0440\u0435\u0434 \u0441\u0430\u043C\u0438\u043C \u043F\u0440\u0430\u0437\u0434\u043D\u0435\u0441\u0442\u0432\u043E\u043C
+        \u043C\u044B, \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u0438, \u043F\u043E\u0434\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u043C
+        \u043E\u0440\u0443\u0436\u0438\u0435 \u0438 \u043D\u0430\u0442\u0438\u0440\u0430\u0435\u043C
+        \u043B\u044B\u0436\u0438, \u0430 \u0432 \u044D\u0442\u043E \u0432\u0440\u0435\u043C\u044F
+        \u043D\u0430\u0448\u0438 \u0436\u0451\u043D\u044B \u0437\u0430\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u044E\u0442
+        \u0437\u0430\u043F\u0430\u0441 \u0435\u0434\u044B \u0438 \u0432\u043E\u0434\u044B
+        \u043D\u0430 \u043F\u0435\u0440\u0432\u043E\u0435 \u0432\u0440\u0435\u043C\u044F."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].sentence
-      value: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u044D\u0442\u043E \u0436\u0435
-        \u043D\u0430\u0448\u0435 \u043D\u0430\u0441\u043B\u0435\u0434\u0438\u0435,
-        \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u044B \u043F\u043E\u043E\u0431\u0435\u0449\u0430\u043B\u0438
-        \u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C \u0438 \u0431\u0435\u0440\u0435\u0447\u044C."
+      value: "\u041A\u0440\u043E\u043C\u0435 \u0442\u043E\u0433\u043E, \u0435\u0441\u0442\u044C
+        \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044F, \u0447\u0442\u043E \u043A\u0430\u0436\u0434\u0430\u044F
+        \u0441\u0435\u043C\u044C\u044F \u0434\u043E\u043B\u0436\u043D\u0430 \u043F\u0440\u0438\u043D\u0435\u0441\u0442\u0438
+        \u043F\u043E \u043E\u0434\u043D\u043E\u043C\u0443 \u0431\u043B\u044E\u0434\u0443
+        \u043D\u0430 \u043F\u0440\u0430\u0437\u0434\u043D\u043E\u0432\u0430\u043D\u0438\u0435,
+        \u043E\u043D\u0438 \u043D\u0443\u0436\u043D\u044B \u0434\u043B\u044F \u043E\u0431\u0440\u044F\u0434\u0430
+        \u041A\u0430\u0441\u0438\u0433\u0430\u043B\u044B\u043C, \u0447\u0442\u043E\u0431\u044B
+        \u0437\u0430\u0434\u043E\u0431\u0440\u0438\u0442\u044C \u0434\u0443\u0445\u043E\u0432."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].sentence
-      value: "\u0417\u043D\u0430\u0447\u0438\u0442 \u0438 \u0432 \u0411\u043E\u0433\u043E\u0432
-        \u0432\u0435\u0440\u0438\u0442\u0435?"
+      value: "\u0412 \u0440\u0430\u0437\u0433\u0430\u0440 \u043F\u0440\u0430\u0437\u0434\u043D\u0435\u0441\u0442\u0432\u0430
+        \u043D\u0430\u0448 \u0448\u0430\u043C\u0430\u043D \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u0442
+        \u044D\u0442\u043E\u0442 \u043E\u0431\u0440\u044F\u0434 \u041A\u0430\u0441\u0438\u0433\u0430\u043B\u044B\u043C,
+        \u043D\u043E \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
+        \u043E\u0431 \u043E\u0431\u0440\u044F\u0434\u0435 \u043D\u0435 \u043C\u043E\u0433\u0443,
+        \u0442\u0430\u043A \u0432\u0435\u043B\u0435\u043B \u043D\u0430\u0448 \u0448\u0430\u043C\u0430\u043D. "
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[13].sentence
+      value: "\u041E\u0441\u043B\u0443\u0448\u0430\u0435\u0448\u044C\u0441\u044F
+        \u0435\u0433\u043E \u0438 \u043F\u0440\u043E\u0431\u043B\u0435\u043C \u043D\u0435
+        \u043E\u0431\u0435\u0440\u0451\u0448\u044C\u0441\u044F. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[14].sentence
+      value: "\u041A\u0430\u043A \u0437\u0434\u043E\u0440\u043E\u0432\u043E, \u0447\u0442\u043E
+        \u0432\u044B \u0432\u0441\u0451 \u0435\u0449\u0451 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0435
+        \u0441\u0442\u0430\u0440\u044B\u0435 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0438!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[15].sentence
+      value: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u044D\u0442\u043E \u0436\u0435
+        \u043D\u0430\u0448\u0435 \u043D\u0430\u0441\u043B\u0435\u0434\u0438\u0435,
+        \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u043C\u044B \u043F\u043E\u043E\u0431\u0435\u0449\u0430\u043B\u0438
+        \u043D\u0430\u0448\u0438\u043C \u043F\u0440\u0435\u0434\u043A\u0430\u043C
+        \u043E\u0445\u0440\u0430\u043D\u044F\u0442\u044C \u0438 \u0431\u0435\u0440\u0435\u0447\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[16].sentence
+      value: "\u0410 \u0432 \u0431\u043E\u0433\u043E\u0432 \u0432\u0435\u0440\u0438\u0442\u0435?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[17].sentence
       value: "\u0410 \u0442\u043E, \u043A\u0430\u043A \u0436\u0435! \u041A\u0430\u043A
         \u043C\u043E\u0436\u043D\u043E \u0432 \u043D\u0438\u0445 \u043D\u0435 \u0432\u0435\u0440\u0438\u0442\u044C?
         \u041B\u0438\u0447\u043D\u043E \u044F \u043F\u043E\u043A\u043B\u043E\u043D\u044F\u044E\u0441\u044C
         \u041B\u043E\u0443\u0431\u0430\u0442\u0443, \u043E\u043D \u2013 \u0411\u043E\u0433
-        \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u043E\u0432. \u0412\u0441\u0435\u0433\u0434\u0430
-        \u043F\u0435\u0440\u0435\u0434 \u043E\u0445\u043E\u0442\u043E\u0439 \u043D\u0443\u0436\u043D\u043E
-        \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u0443 \u043D\u0435\u0433\u043E
-        \u0431\u043B\u0430\u0433\u043E\u0441\u043B\u043E\u0432\u0435\u043D\u0438\u0435.
-        \u0410 \u0432\u043E\u0442 \u0436\u0435\u043D\u0449\u0438\u043D\u044B \u043D\u0430\u0448\u0438
-        \u043E\u0431\u0440\u0430\u0449\u0430\u044E\u0442\u0441\u044F \u0437\u0430
-        \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043A \u041D\u0430\u043D\u043D\u044F\u0448\u0435."
+        \u043E\u0445\u043E\u0442\u043D\u0438\u043A\u043E\u0432."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[14].sentence
-      value: "\u041A\u0430\u043A \u0437\u0434\u043E\u0440\u043E\u0432\u043E! \u0410
-        \u043C\u043E\u0436\u0435\u0442 \u0412\u044B \u043C\u043D\u0435 \u043F\u043E\u0434\u0441\u043A\u0430\u0436\u0438\u0442\u0435:
-        \u0441 \u043F\u0438\u0441\u044C\u043C\u043E\u043C \u0412\u0430\u0439\u0430\u043D\u043A\u0438
-        \u044F \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430 \u0441\u0442\u0440\u0430\u043D\u043D\u0443\u044E
-        \u0437\u0430\u043F\u0438\u0441\u043A\u0443, \u043D\u043E \u044F \u043D\u0435
-        \u043C\u043E\u0433\u0443 \u0435\u0451 \u043F\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438.
-        \u041B\u0430\u0441\u0441\u0430 \u043F\u043E\u043C\u043E\u0433\u043B\u0430
-        \u043C\u043D\u0435 \u0441 \u0447\u0430\u0441\u0442\u044C\u044E, \u043D\u043E
-        \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u043E\u0435 \u043F\u043E\u043D\u044F\u0442\u044C
-        \u043F\u043E\u043A\u0430 \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C."
+      propertyPath: sentences.Array.data[18].sentence
+      value: "\u0412\u0441\u0435\u0433\u0434\u0430 \u043F\u0435\u0440\u0435\u0434
+        \u043E\u0445\u043E\u0442\u043E\u0439 \u043F\u0440\u043E\u0448\u0443 \u0443
+        \u043D\u0435\u0433\u043E \u0431\u043B\u0430\u0433\u043E\u0441\u043B\u043E\u0432\u0435\u043D\u0438\u0435.
+        \u0410 \u0432\u043E\u0442 \u0436\u0435\u043D\u0430 \u043C\u043E\u044F \u0447\u0443\u0442\u044C,
+        \u0447\u0442\u043E \u043E\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F
+        \u043A \u041D\u0430\u043D\u043D\u044F\u0448\u0435, \u043F\u043E\u043A\u0440\u043E\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u0438\u0446\u0435
+        \u0436\u0435\u043D\u0449\u0438\u043D."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[15].sentence
+      propertyPath: sentences.Array.data[19].sentence
+      value: "\u041A\u0430\u043A \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E! 
+        \u041C\u043E\u0436\u0435\u0442, \u0432\u044B \u043C\u043D\u0435 \u043F\u043E\u043C\u043E\u0436\u0435\u0442\u0435
+        \u0435\u0449\u0435 \u043A\u043E\u0435 \u0441 \u0447\u0435\u043C?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[20].sentence
+      value: "\u042F \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0430 \u0441\u0442\u0440\u0430\u043D\u043D\u0443\u044E
+        \u0437\u0430\u043F\u0438\u0441\u043A\u0443 \u043D\u0430 \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u043E\u043C
+        \u044F\u0437\u044B\u043A\u0435, \u043D\u043E \u044F \u043D\u0435 \u043C\u043E\u0433\u0443
+        \u0435\u0451 \u043F\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438. \u041B\u0430\u0441\u0441\u0430
+        \u043F\u043E\u043C\u043E\u0433\u043B\u0430 \u043C\u043D\u0435 \u043F\u043E\u043D\u044F\u0442\u044C,
+        \u0447\u0442\u043E \u0440\u0435\u0447\u044C \u0438\u0434\u0451\u0442 \u043E
+        \u0434\u043E\u0440\u043E\u0433\u0435, \u043D\u043E \u043E \u043A\u0430\u043A\u043E\u0439
+        \u043D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].sentence
       value: "\u0425\u043C, \u043A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E,
         \u044F \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u0437\u043D\u0430\u044E
         \u0435\u0449\u0451 \u0445\u0443\u0436\u0435 \u041B\u0430\u0441\u0441\u044B,
@@ -5454,36 +6483,41 @@ PrefabInstance:
         \u0441\u043C\u043E\u0433\u0443 \u0447\u0442\u043E-\u0442\u043E \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u0430\u0442\u044C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[16].sentence
+      propertyPath: sentences.Array.data[22].sentence
       value: "\xAB\u042D\u0439 \u0445\u043E\u043A\u0442\u043E \u0446\u0443\u043B\u0438\u043D\u0438
         \u0433\u0438\u0430\u043D\u0430\u0435, \u0437\u0443\u0433\u0434\u0438\u0442\u0438\u0442\u0438
-        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439\xBB\n\u041F\u043E \u044D\u0442\u043E\u0439
-        \u0434\u043E\u0440\u043E\u0433\u0435...\r\n"
+        \u044D\u043C\u044D\u0437\u044D\u0443\u044D\u0439\xBB"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[17].sentence
-      value: "\u0412\u043E\u0442 \u044D\u0442\u043E \u0441\u043B\u043E\u0432\u043E:
-        \"\u0433\u0438\u0430\u043D\u0430\u0435\" \u2013 \u0438\u0434\u0438, \u0430
-        \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u043E\u0435, \u0436\u0430\u043B\u044C
-        \u043D\u0435 \u0437\u043D\u0430\u044E. \u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E,
-        \u0442\u0435\u0431\u0435 \u0441\u0442\u043E\u0438\u0442 \u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C
-        \u043E\u0431 \u044D\u0442\u043E\u043C \u0443 \u0441\u0430\u043C\u043E\u0439
-        \u0412\u0430\u0439\u0430\u043D\u043A\u0438, \u0432\u043E\u043D \u043E\u043D\u0430
-        \u043D\u0435\u0434\u0430\u043B\u0435\u043A\u043E \u0441\u043E\u0432\u0441\u0435\u043C
-        \u0441\u0442\u043E\u0438\u0442."
+      propertyPath: sentences.Array.data[23].sentence
+      value: "\u0412\u043E\u0442 \u044D\u0442\u043E \u0432\u043E\u0442 \u0441\u043B\u043E\u0432\u043E:
+        \xAB\u0433\u0438\u0430\u043D\u0430\u0435\xBB, \u044F \u0445\u043E\u0440\u043E\u0448\u043E
+        \u0437\u043D\u0430\u044E, \u044D\u0442\u043E \xAB\u0438\u0434\u0438\xBB,
+        \u0430 \u0432\u043E\u0442 \u0441 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u043C
+        \u043D\u0435 \u043F\u043E\u043C\u043E\u0433\u0443."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[18].sentence
+      propertyPath: sentences.Array.data[24].sentence
+      value: "\u041D\u043E \u0434\u0443\u043C\u0430\u044E, \u0442\u0435\u0431\u0435
+        \u0441\u0442\u043E\u0438\u0442 \u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C
+        \u043E\u0431 \u044D\u0442\u043E\u043C \u0443 \u0412\u0430\u0439\u0430\u043D\u043A\u0438.
+        \u0412\u043E\u0442 \u0436\u0435 \u043E\u043D\u0430. \u0421\u043E\u0432\u0441\u0435\u043C
+        \u043D\u0435\u0434\u0430\u043B\u0435\u043A\u043E \u0441\u0442\u043E\u0438\u0442."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[25].sentence
       value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0412\u0430\u043C \u0431\u043E\u043B\u044C\u0448\u043E\u0435!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[19].sentence
-      value: "\u0414\u0430 \u043D\u0435 \u0437\u0430 \u0447\u0442\u043E, \u0443\u0434\u0430\u0447\u0438
-        \u0442\u0435\u0431\u0435 \u0441 \u0442\u0432\u043E\u0438\u043C \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0435\u043C!"
+      propertyPath: sentences.Array.data[26].sentence
+      value: "\u0412\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0434 \u043F\u043E\u043C\u043E\u0447\u044C.
+        \u0414\u0430 \u043E\u0441\u0432\u0435\u0442\u0438\u0442 \u0421\u0435\u0443\u043D
+        (\u0421\u043E\u043B\u043D\u0446\u0435) \u043F\u0443\u0442\u044C \u0442\u0432\u043E\u0439!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[20].sentence
-      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E."
+      propertyPath: sentences.Array.data[27].sentence
+      value: "\u041C\u043E\u0436\u0435\u0442, \u0432\u044B \u043C\u043D\u0435 \u043F\u043E\u043C\u043E\u0436\u0435\u0442\u0435
+        \u0435\u0449\u0435 \u043A\u043E\u0435 \u0441 \u0447\u0435\u043C?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
@@ -5492,23 +6526,23 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[1].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[4].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[5].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[6].dialogueCharacter
       value: 
@@ -5516,7 +6550,7 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[7].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[8].dialogueCharacter
       value: 
@@ -5524,11 +6558,11 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[10].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].dialogueCharacter
       value: 
@@ -5536,7 +6570,7 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[13].dialogueCharacter
       value: 
@@ -5560,13 +6594,41 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[18].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[19].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[20].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[22].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[23].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[24].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[25].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[26].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 5022dd5c17a9030419eb079859bc8356, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[27].dialogueCharacter
       value: 
       objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
@@ -5574,7 +6636,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].sentenceEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[18].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].sentenceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5821,50 +6891,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.size
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].sentence
       value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438! \u041C\u0435\u043D\u044F
         \u0437\u043E\u0432\u0443\u0442 \u0410\u0439\u043B\u0438\u043D. \u041B\u044F\u043D\u043A\u0443\u0439
-        \u0441\u043A\u0430\u0437\u0430\u043B, \u0447\u0442\u043E \u0412\u044B \u0412\u0430\u0439\u0430\u043D\u043A\u0430,
-        \u0442\u0430 \u0441\u0430\u043C\u0430\u044F \u0441 \u043A\u0435\u043C \u044F
-        \u0441\u043F\u0438\u0441\u044B\u0432\u0430\u043B\u0430\u0441\u044C \u043F\u043E
-        \u043F\u043E\u0432\u043E\u0434\u0443 \u043C\u043E\u0435\u0433\u043E \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F."
+        \u0441\u043A\u0430\u0437\u0430\u043B, \u0447\u0442\u043E \u0432\u044B \u0438
+        \u0435\u0441\u0442\u044C \u0412\u0430\u0439\u0430\u043D\u043A\u0430."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[1].sentence
       value: "\u0411\u0430\u0433\u0434\u0438\u0444\u0438, \u0410\u0439\u043B\u0438\u043D.
-        \u0414\u0430, \u044F \u0412\u0430\u0439\u0430\u043D\u043A\u0430, \u0438\u0437
+        \u0414\u0430, \u044F \u0412\u0430\u0439\u0430\u043D\u043A\u0430 \u0438\u0437
         \u0440\u043E\u0434\u044F \u041A\u044F, \u0434\u043E\u0447\u044C \u0448\u0430\u043C\u0430\u043D\u0430
-        \u041A\u044F\u043E\u0441\u0430. \u041E\u0447\u0435\u043D\u044C \u0440\u0430\u0434\u0430
-        \u0432\u0438\u0434\u0435\u0442\u044C \u0442\u0435\u0431\u044F \u0437\u0434\u0435\u0441\u044C,
-        \u043C\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0434\u044B
-        \u0442\u0435\u043C, \u043A\u0442\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442\u0441\u044F
-        \u043D\u0430\u0448\u0435\u0439 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u043E\u0439
-        \u0438 \u044F\u0437\u044B\u043A\u043E\u043C. \u0422\u0430\u043A, \u0447\u0442\u043E
-        \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0439 \u0432\u0441\u0451,
-        \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0448\u044C, \u043D\u0435 \u0441\u0442\u0435\u0441\u043D\u044F\u0439\u0441\u044F!"
+        \u041A\u044F\u043E\u0441\u0430."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "\u0410 \u0412\u044B, \u0441\u0443\u0434\u044F \u043F\u043E \u0432\u0441\u0435\u043C\u0443,
-        \u043C\u043D\u043E\u0433\u043E\u0435 \u0437\u043D\u0430\u0435\u0442\u0435
-        \u043E\u0431 \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u043E\u043C
-        \u044F\u0437\u044B\u043A\u0435?"
+      value: "\u0420\u0430\u0434\u0430 \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C
+        \u0442\u0435\u0431\u044F \u0432 \u043D\u0430\u0448\u0435\u0439 \u043E\u0431\u0449\u0438\u043D\u0435,
+        \u043C\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0440\u0430\u0434\u044B
+        \u0442\u0435\u043C, \u043A\u0442\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442\u0441\u044F
+        \u043D\u0430\u0448\u0435\u0439 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u043E\u0439
+        \u0438 \u044F\u0437\u044B\u043A\u043E\u043C. \u0422\u0430\u043A \u0447\u0442\u043E
+        \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0439 \u0432\u0441\u0451,
+        \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0448\u044C!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].sentence
-      value: "\u0414\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E, \u044F
-        \u0432\u0435\u0434\u044C \u0434\u043E\u0447\u044C \u0448\u0430\u043C\u0430\u043D\u0430,
-        \u043F\u043E\u0442\u043E\u043C\u0443 \u0441 \u0434\u0435\u0442\u0441\u0442\u0432\u0430
-        \u043F\u0440\u0438\u0443\u0447\u0435\u043D\u0430 \u0438 \u043A \u044F\u0437\u044B\u043A\u0443,
-        \u0438 \u043A \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044F\u043C \u043D\u0430\u0448\u0438\u043C.
-        \u0423\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u044F \u043C\u043E\u0436\u0435\u0442
-        \u043D\u0435 \u043B\u0443\u0447\u0448\u0435 \u0432\u0441\u0435\u0445 \u0437\u043D\u0430\u044E,
-        \u043D\u043E \u0437\u0430\u0442\u043E \u043C\u043E\u0433\u0443 \u043C\u043D\u043E\u0433\u043E\u0435
-        \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0442\u0435\u0431\u0435
-        \u043F\u0440\u043E \u043D\u0430\u0448\u0438 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0438
+      value: "\u041E\u0447\u0435\u043D\u044C \u0436\u0430\u043B\u044C \u0442\u0432\u043E\u0435\u0433\u043E
+        \u043D\u0430\u0443\u0447\u043D\u043E\u0433\u043E \u0440\u0443\u043A\u043E\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044F,
+        \u043E\u0442\u0435\u0446 \u0441\u043A\u0430\u0437\u0430\u043B, \u0447\u0442\u043E
+        \u0431\u0435\u0434\u0430 \u0443 \u043D\u0435\u0433\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u0430\u0441\u044C,
+        \u043D\u0430\u0434\u0435\u044E\u0441\u044C, \u0447\u0442\u043E \u043E\u043D
+        \u0432\u043F\u043E\u0440\u044F\u0434\u043A\u0435."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[4].sentence
+      value: "\u041E\u043D \u043F\u043E\u0432\u0440\u0435\u0434\u0438\u043B  \u043D\u043E\u0433\u0443,
+        \u043D\u043E \u0432 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u043E\u043C
+        \u0432 \u043F\u043E\u0440\u044F\u0434\u043A\u0435. \u041D\u0435 \u0437\u043D\u0430\u043B\u0430,
+        \u0447\u0442\u043E \u0448\u0430\u043C\u0430\u043D \u0438 \u0442\u0430\u043A\u043E\u0435
+        \u043C\u043E\u0436\u0435\u0442 \u0443\u0437\u043D\u0430\u0442\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[5].sentence
+      value: "\u041E\u0442\u0435\u0446 \u0432\u0441\u0451 \u0432\u0438\u0434\u0438\u0442,
+        \u0432\u0441\u0451 \u0437\u043D\u0430\u0435\u0442, \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F
+        \u0441\u0432\u043E\u0435\u043C\u0443 \u0434\u0430\u0440\u0443 \u0448\u0430\u043C\u0430\u043D\u0430."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[6].sentence
+      value: "\u041B\u0430\u0441\u0441\u0430 \u0443\u043F\u043E\u043C\u0438\u043D\u0430\u043B\u0430,
+        \u0447\u0442\u043E \u0441\u0435\u043C\u044C\u044F \u0448\u0430\u043C\u0430\u043D\u0430
+        \u043D\u0435\u043F\u043B\u043E\u0445\u043E \u0437\u043D\u0430\u0435\u0442
+        \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u044F\u0437\u044B\u043A,
+        \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[7].sentence
+      value: "\u041C\u043E\u0436\u043D\u043E \u0441\u043A\u0430\u0437\u0430\u0442\u044C
+        \u0438 \u0442\u0430\u043A, \u044F \u0441 \u0434\u0435\u0442\u0441\u0442\u0432\u0430
+        \u0438\u0437\u0443\u0447\u0430\u043B\u0430 \u043D\u0430\u0448\u0438 \u044F\u0437\u044B\u043A
+        \u0438 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u0438, \u043F\u043E\u0442\u043E\u043C\u0443
+        \u0447\u0442\u043E \u043E\u0442\u0435\u0446 \u043D\u0430\u0441\u0442\u0430\u0438\u0432\u0430\u043B
+        \u043D\u0430 \u044D\u0442\u043E\u043C. \u0414\u0430 \u043C\u043D\u0435 \u0438
+        \u0441\u0430\u043C\u043E\u0439 \u0432\u0441\u0435\u0433\u0434\u0430 \u044D\u0442\u043E
+        \u0431\u044B\u043B\u043E \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[8].sentence
+      value: "\u0423\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0438\u0439 \u044F
+        \u043C\u043E\u0436\u0435\u0442 \u043D\u0435 \u043B\u0443\u0447\u0448\u0435
+        \u0432\u0441\u0435\u0445 \u0437\u043D\u0430\u044E, \u043D\u043E \u0437\u0430\u0442\u043E
+        \u043C\u043E\u0433\u0443 \u043C\u043D\u043E\u0433\u043E\u0435 \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
+        \u0442\u0435\u0431\u0435 \u043F\u0440\u043E \u043D\u0430\u0448\u0438 \u043E\u0431\u044B\u0447\u0430\u0438
         \u0438 \u043F\u0440\u0435\u0434\u0430\u043D\u0438\u044F \u043D\u0430\u0448\u0438\u0445
         \u043F\u0440\u0435\u0434\u043A\u043E\u0432, \u043D\u0435 \u0437\u0440\u044F
         \u043C\u0435\u043D\u044F \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442
@@ -5872,179 +6974,189 @@ PrefabInstance:
         \u0438\u0441\u0442\u043E\u0440\u0438\u0439."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[4].sentence
-      value: "\u0410 \u043A\u0430\u043A\u0430\u044F \u0443 \u0412\u0430\u0441 \u0441\u0430\u043C\u0430\u044F
-        \u043B\u044E\u0431\u0438\u043C\u0430\u044F \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044F,
-        \u043A\u043E\u0442\u043E\u0440\u0443\u044E \u0412\u044B \u0441\u043E\u0431\u043B\u044E\u0434\u0430\u0435\u0442\u0435?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[5].sentence
-      value: "\u0414\u0430, \u0435\u0441\u0442\u044C \u0442\u0430\u043A\u0430\u044F.
-        \u0420\u0430\u0437 \u0432 \u0434\u0435\u043D\u044C, \u0432 \u043D\u0430\u0448\u0435\u043C
-        \u0440\u043E\u0434\u0443, \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440,
-        \u043F\u0440\u0438\u043D\u044F\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C
-        \u044D\u0442\u043E \u0441 \u0443\u0442\u0440\u0430, \u043F\u0440\u0435\u0436\u0434\u0435
-        \u0447\u0435\u043C \u0441\u0430\u043C\u0438\u043C \u0441\u0435\u0441\u0442\u044C
-        \u0435\u0441\u0442\u044C, \u043C\u044B \u0443\u0433\u043E\u0449\u0430\u0435\u043C
-        \u041F\u0443\u0437\u044F, \u0438\u043B\u0438 \u0436\u0435 \u041F\u0443\u0437\u044F
-        \u0430\u0437\u0430\u043D\u0438 \u2013 \u044D\u0442\u043E \u0434\u0443\u0445
-        \u043E\u0433\u043D\u044F."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[6].sentence
-      value: "\u0427\u0442\u043E\u0431\u044B \u0432 \u0434\u043E\u043C\u0435 \u0432\u0441\u0435\u0433\u0434\u0430
-        \u0431\u044B\u043B\u043E \u0442\u0435\u043F\u043B\u043E \u0438 \u043E\u0433\u043E\u043D\u044C
-        \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0443\u0433\u0430\u0441\u0430\u043B,
-        \u043D\u0443\u0436\u043D\u043E \u0437\u0430\u0434\u043E\u0431\u0440\u0438\u0442\u044C
-        \u0435\u0433\u043E \u0434\u0443\u0445\u0430 \u0438 \u043E\u0442\u0434\u0430\u0442\u044C
-        \u0441\u0430\u043C\u0443\u044E \u0432\u043A\u0443\u0441\u043D\u0443\u044E
-        \u0435\u0434\u0443 \u0441\u043E \u0441\u0442\u043E\u043B\u0430."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[7].sentence
-      value: "\u042F \u0441\u043B\u044B\u0448\u0430\u043B\u0430, \u0447\u0442\u043E
-        \u043E\u0442 \u043E\u0431\u0449\u0438\u043D\u044B \u043A \u043E\u0431\u0449\u0438\u043D\u0435
-        \u043E\u0442\u043B\u0438\u0447\u0430\u044E\u0442\u0441\u044F \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u044F
-        \u043E \u0434\u0443\u0445\u0430\u0445, \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[8].sentence
-      value: "\u0414\u0430, \u0432\u043E\u0442 \u041F\u0443\u0437\u044F \u0430\u0437\u0430\u043D\u0438,
-        \u043C\u044B \u0432\u0435\u0440\u0438\u043C, \u0447\u0442\u043E \u0435\u0451
-        \u0438\u0441\u0442\u0438\u043D\u043D\u044B\u0439 \u0432\u0438\u0434 \u2013
-        \u044D\u0442\u043E \u043F\u043E\u0436\u0438\u043B\u0430\u044F \u0436\u0435\u043D\u0449\u0438\u043D\u0430.
-        \u0410 \u0432\u043E\u0442 \u0432 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0438,
-        \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0440\u0430\u043D\u044C\u0448\u0435
-        \u0441 \u043D\u0430\u043C\u0438 \u043F\u043E \u0441\u043E\u0441\u0435\u0434\u0441\u0442\u0432\u0443
-        \u043D\u0430\u0445\u043E\u0434\u0438\u043B\u043E\u0441\u044C, \u0442\u0430\u043C
-        \u0432\u0435\u0440\u0438\u043B\u0438, \u0447\u0442\u043E \u044D\u0442\u043E
-        \u044E\u043D\u043E\u0448\u0430."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].sentence
-      value: "\u041D\u043E \u044F \u0442\u0430\u043A \u0441\u043A\u0430\u0436\u0443,
-        \u0434\u0443\u0445\u0438 \u0441\u0430\u043C\u0438 \u0432\u044B\u0431\u0438\u0440\u0430\u044E\u0442
-        \u0432 \u043A\u0430\u043A\u043E\u043C \u043E\u0431\u043B\u0438\u043A\u0435
-        \u044F\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043F\u0435\u0440\u0435\u0434
-        \u0448\u0430\u043C\u0430\u043D\u0430\u043C\u0438, \u043C\u044B \u043B\u0438\u0448\u044C
-        \u0432\u0435\u0440\u0438\u043C \u0438\u0445 \u0441\u043B\u043E\u0432\u0430\u043C,
-        \u043E\u0442 \u044D\u0442\u043E\u0433\u043E \u0438 \u0440\u0430\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F
-        \u0435\u0441\u0442\u044C. \u0412\u0430\u0436\u0435\u043D \u043D\u0435 \u043E\u0431\u043B\u0438\u043A,
-        \u0430 \u0441\u0443\u0442\u044C."
+      value: "\u0410 \u043A\u0430\u043A\u0430\u044F \u0443 \u0432\u0430\u0441 \u0441\u0430\u043C\u0430\u044F
+        \u043B\u044E\u0431\u0438\u043C\u0430\u044F \u0443\u0434\u044D\u0433\u0435\u0439\u0441\u043A\u0430\u044F
+        \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044F?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[10].sentence
-      value: "\u0412\u044B \u0432\u0435\u0440\u0438\u0442\u0435 \u0432 \u0411\u043E\u0433\u043E\u0432
-        \u0438 \u0432 \u0434\u0443\u0445\u043E\u0432, \u044F \u0441\u043B\u044B\u0448\u0430\u043B\u0430,
-        \u0447\u0442\u043E \u0443 \u0412\u0430\u0448\u0435\u0433\u043E \u043D\u0430\u0440\u043E\u0434\u0430
-        \u0442\u0430\u043A\u0436\u0435 \u043D\u0435\u043E\u0431\u044B\u0447\u043D\u043E\u0435
-        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435
-        \u043E \u043C\u0438\u0440\u0435, \u043D\u0435 \u043C\u043E\u0433\u043B\u0438
-        \u0431\u044B \u0412\u044B \u043C\u043D\u0435 \u043E\u0431 \u044D\u0442\u043E\u043C
-        \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C?"
+      value: "\u0420\u0430\u0437 \u0432 \u0434\u0435\u043D\u044C \u043C\u044B \u0443\u0433\u043E\u0449\u0430\u0435\u043C
+        \u041F\u0443\u0437\u044F, \u0438\u043B\u0438 \u0436\u0435 \u041F\u0443\u0437\u044F
+        \u0430\u0437\u0430\u043D\u0438 \u2013 \u0434\u0443\u0445\u0430 \u043E\u0433\u043D\u044F.
+        \u0412 \u043D\u0430\u0448\u0435\u0439 \u0441\u0435\u043C\u044C\u0438 \u044D\u0442\u043E
+        \u043F\u0440\u0438\u043D\u044F\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C
+        \u0441 \u0443\u0442\u0440\u0430. "
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].sentence
-      value: "\u0410\u0439\u0430 (\u0445\u043E\u0440\u043E\u0448\u043E), \u0440\u0430\u0441\u0441\u043A\u0430\u0436\u0443.
-        \u0421\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044F, \u0447\u0442\u043E
-        \u0435\u0441\u0442\u044C \u0442\u0440\u0438 \u043C\u0438\u0440\u0430: \u0432\u0435\u0440\u0445\u043D\u0438\u0439,
-        \u0433\u0434\u0435 \u043E\u0431\u0438\u0442\u0430\u044E\u0442 \u043D\u0430\u0448\u0438
-        \u0431\u043E\u0436\u0435\u0441\u0442\u0432\u0430, \u0441\u0440\u0435\u0434\u043D\u0438\u0439,
-        \u0433\u0434\u0435 \u0436\u0438\u0432\u0451\u043C \u043C\u044B \u0438 \u043D\u0438\u0436\u043D\u0438\u0439
-        \u2013 \u0437\u0430\u0433\u0440\u043E\u0431\u043D\u044B\u0439."
+      value: "\u041C\u044B \u044D\u0442\u043E \u0434\u0435\u043B\u0430\u0435\u043C,
+        \u0447\u0442\u043E\u0431\u044B \u0432 \u0434\u043E\u043C\u0435 \u0432\u0441\u0435\u0433\u0434\u0430
+        \u0431\u044B\u043B\u043E \u0442\u0435\u043F\u043B\u043E \u0438 \u043E\u0433\u043E\u043D\u044C
+        \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0443\u0433\u0430\u0441\u0430\u043B,
+        \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0432\u0441\u0435\u0433\u0434\u0430
+        \u043E\u0442\u0434\u0430\u0451\u043C \u0435\u0439 \u0441\u0430\u043C\u0443\u044E
+        \u0432\u043A\u0443\u0441\u043D\u0443\u044E \u0435\u0434\u0443 \u0441\u043E
+        \u0441\u0442\u043E\u043B\u0430."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].sentence
-      value: " \u0423 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u0435\u0441\u0442\u044C
+      value: "\u0415\u0439? \u0410 \u044F \u0441\u043B\u044B\u0448\u0430\u043B\u0430,
+        \u0447\u0442\u043E \u041F\u0443\u0437\u044F \u0430\u0437\u0430\u043D\u0438
+        \u2013 \u044D\u0442\u043E \u043C\u043E\u043B\u043E\u0434\u043E\u0439 \u043F\u0430\u0440\u0435\u043D\u044C. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[13].sentence
+      value: "\u0412 \u043D\u0430\u0448\u0435\u0439 \u043E\u0431\u0449\u0438\u043D\u0435
+        \u0432\u0435\u0440\u044F\u0442, \u0447\u0442\u043E \u0438\u0441\u0442\u0438\u043D\u043D\u044B\u0439
+        \u0432\u0438\u0434 \u041F\u0443\u0437\u044F \u2013 \u044D\u0442\u043E \u043F\u043E\u0436\u0438\u043B\u0430\u044F
+        \u0436\u0435\u043D\u0449\u0438\u043D\u0430. \u0410 \u0432\u043E\u0442 \u0432
+        \u0441\u043E\u0441\u0435\u0434\u043D\u0435\u043C \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u0438
+        \u0432\u0435\u0440\u0438\u043B\u0438, \u0447\u0442\u043E \u044D\u0442\u043E
+        \u044E\u043D\u043E\u0448\u0430. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[14].sentence
+      value: "\u041D\u043E \u0441\u043A\u0430\u0436\u0443 \u0442\u0430\u043A: \u0434\u0443\u0445\u0438
+        \u0441\u0430\u043C\u0438 \u0432\u044B\u0431\u0438\u0440\u0430\u044E\u0442
+        \u0432 \u043A\u0430\u043A\u043E\u043C \u043E\u0431\u043B\u0438\u043A\u0435
+        \u044F\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043F\u0435\u0440\u0435\u0434
+        \u0448\u0430\u043C\u0430\u043D\u0430\u043C\u0438, \u043C\u044B \u043B\u0438\u0448\u044C
+        \u0432\u0435\u0440\u0438\u043C \u0442\u043E\u043C\u0443, \u0447\u0442\u043E
+        \u043E\u043D\u0438 \u0433\u043E\u0432\u043E\u0440\u044F\u0442. \u041D\u0430
+        \u0441\u0430\u043C\u043E\u043C \u0434\u0435\u043B\u0435, \u0432\u0430\u0436\u0435\u043D
+        \u043D\u0435 \u0432\u043D\u0435\u0448\u043D\u0438\u0439 \u043E\u0431\u043B\u0438\u043A,
+        \u0430 \u0441\u0443\u0442\u044C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[15].sentence
+      value: "\u0415\u0441\u0442\u044C \u043E\u0434\u0438\u043D \u0432\u043E\u043F\u0440\u043E\u0441,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043C\u0435\u043D\u044F \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u0443\u0435\u0442,
+        \u044D\u0442\u043E \u0432\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+        \u043E \u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0438 \u043C\u0438\u0440\u0430.
+        \u041D\u0435 \u043C\u043E\u0433\u043B\u0438 \u0431\u044B \u0432\u044B \u043C\u043D\u0435
+        \u043E\u0431 \u044D\u0442\u043E\u043C \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[16].sentence
+      value: "\u0410\u0439\u0430 (\u0445\u043E\u0440\u043E\u0448\u043E), \u0440\u0430\u0441\u0441\u043A\u0430\u0436\u0443.
+        \u041C\u044B \u043F\u043E\u043B\u0430\u0433\u0430\u0435\u043C, \u0447\u0442\u043E
+        \u0435\u0441\u0442\u044C \u0442\u0440\u0438 \u043C\u0438\u0440\u0430: \u0432\u0435\u0440\u0445\u043D\u0438\u0439,
+        \u0433\u0434\u0435 \u043E\u0431\u0438\u0442\u0430\u044E\u0442 \u043D\u0430\u0448\u0438
+        \u0431\u043E\u0436\u0435\u0441\u0442\u0432\u0430, \u0441\u0440\u0435\u0434\u043D\u0438\u0439,
+        \u0433\u0434\u0435 \u0436\u0438\u0432\u0451\u043C \u043C\u044B, \u043B\u044E\u0434\u0438,
+        \u0438 \u043D\u0438\u0436\u043D\u0438\u0439 \u2013 \u0437\u0430\u0433\u0440\u043E\u0431\u043D\u044B\u0439. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[17].sentence
+      value: "\u0423 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430 \u0435\u0441\u0442\u044C
         \u0434\u0432\u0435 \u0434\u0443\u0448\u0438, \u043E\u0434\u043D\u0430 \u0438\u0437
         \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0447\u0430\u043B\u0438\u043F\u0438
         \u0445\u0430\u043D\u044F \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442
-        \u0446\u0438\u043A\u043B \u043F\u0435\u0440\u0435\u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F.
-        \u041F\u043E\u0441\u043B\u0435 \u0441\u043C\u0435\u0440\u0442\u0438 \u0447\u0430\u043B\u0438\u043F\u0438
-        \u0445\u0430\u043D\u044F \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F
+        \u0446\u0438\u043A\u043B \u043F\u0435\u0440\u0435\u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[18].sentence
+      value: "\u041F\u043E\u0441\u043B\u0435 \u0441\u043C\u0435\u0440\u0442\u0438
+        \u0447\u0430\u043B\u0438\u043F\u0438 \u0445\u0430\u043D\u044F \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0441\u044F
         \u0432 \u043D\u0438\u0436\u043D\u0438\u0439 \u043C\u0438\u0440 \u043D\u0430
         \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0411\u0443\u043D\u0438\u0433\u044D,
         \u043F\u043E\u0441\u043B\u0435 \u044D\u0442\u043E\u0433\u043E \u043D\u0430
         \u0432\u0442\u043E\u0440\u043E\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C
         \u0421\u0430\u043D\u043A\u0443, \u0433\u0434\u0435 \u0434\u0443\u0448\u0430
         \u043F\u0438\u0442\u0430\u0435\u0442\u0441\u044F \u0443\u0433\u043B\u0451\u043C
-        \u0438 \u0441\u0442\u0440\u0430\u0434\u0430\u0435\u0442. \u0422\u043E\u043B\u044C\u043A\u043E
-        \u043F\u043E\u0441\u043B\u0435 \u044D\u0442\u043E\u0433\u043E \u0435\u0439
-        \u0434\u043E\u0437\u0432\u043E\u043B\u0435\u043D\u043E \u043F\u0435\u0440\u0435\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F
+        \u0438 \u0441\u0442\u0440\u0430\u0434\u0430\u0435\u0442."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[19].sentence
+      value: "\u0422\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0441\u043B\u0435
+        \u044D\u0442\u043E\u0433\u043E \u0435\u0439 \u0434\u043E\u0437\u0432\u043E\u043B\u0435\u043D\u043E
+        \u043F\u0435\u0440\u0435\u0440\u043E\u0434\u0438\u0442\u044C\u0441\u044F
         \u0432\u043D\u043E\u0432\u044C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[13].sentence
-      value: "\u0412\u044B \u0441\u043A\u0430\u0437\u0430\u043B\u0438, \u0447\u0442\u043E
-        \u0412\u0430\u0448 \u043E\u0442\u0435\u0446 \u0448\u0430\u043C\u0430\u043D?
-        \u0423 \u043D\u0435\u0433\u043E \u0435\u0441\u0442\u044C \u043A\u0430\u043A\u0438\u0435-\u0442\u043E
-        \u043E\u0431\u044F\u0437\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430
-        \u043F\u0435\u0440\u0435\u0434 \u043E\u0431\u0449\u0438\u043D\u043E\u0439?
+      propertyPath: sentences.Array.data[20].sentence
+      value: "\u0410 \u0435\u0449\u0451 \u0432\u044B \u0441\u043A\u0430\u0437\u0430\u043B\u0438,
+        \u0447\u0442\u043E \u0432\u0430\u0448 \u043E\u0442\u0435\u0446 \u0448\u0430\u043C\u0430\u043D.
         \u0427\u0435\u043C \u043E\u043D \u043E\u0431\u044B\u0447\u043D\u043E \u0437\u0430\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F?"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[14].sentence
+      propertyPath: sentences.Array.data[21].sentence
       value: "\u041A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u043E \u043C\u043E\u0439
-        \u0430\u0431\u0443\u0433\u0430, \u043E\u0442\u0435\u0446 \u043F\u043E-\u0432\u0430\u0448\u0435\u043C\u0443,
+        \u0430\u0431\u0443\u0433\u0430, \u043E\u0442\u0435\u0446, \u043F\u043E-\u0432\u0430\u0448\u0435\u043C\u0443,
         \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u043D\u0430\u043C \u0432
-        \u0440\u0430\u0437\u043D\u044B\u0445 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u0445,
+        \u0442\u0440\u0443\u0434\u043D\u044B\u0445 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u0445,
         \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043A\u043E\u0433\u0434\u0430
-        \u043A\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435\u0442. \u0414\u043B\u044F
-        \u044D\u0442\u043E\u0433\u043E \u043E\u043D \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u0442
-        \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043E\u0431\u0440\u044F\u0434\u044B,
-        \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043A\u043E\u0442\u043E\u0440\u044B\u0445
-        \u043A\u0430\u043C\u043B\u0430\u0435\u0442."
+        \u043A\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435\u0442."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[15].sentence
-      value: "\u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
-        \u0435\u043C\u0443 \u0441\u0432\u044F\u0437\u044B\u0432\u0430\u0442\u044C\u0441\u044F
-        \u0441 \u0434\u0443\u0445\u0430\u043C\u0438. \u0414\u0435\u0442\u0430\u043B\u0435\u0439
-        \u044F, \u043E\u0434\u043D\u0430\u043A\u043E, \u043D\u0435 \u0437\u043D\u0430\u044E,
-        \u044D\u0442\u043E \u0441\u0435\u043A\u0440\u0435\u0442 \u0434\u0430\u0436\u0435
-        \u0434\u043B\u044F \u043C\u0435\u043D\u044F, \u0435\u0433\u043E \u0434\u043E\u0447\u0435\u0440\u0438,
-        \u0447\u0442\u043E \u0443\u0436 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
+      propertyPath: sentences.Array.data[22].sentence
+      value: "\u0412\u043E \u0432\u0440\u0435\u043C\u044F \u043A\u0430\u043C\u043B\u0430\u043D\u0438\u044F
+        \u043E\u043D \u0441\u0432\u044F\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+        \u0441 \u0434\u0443\u0445\u0430\u043C\u0438. \u041D\u043E \u043A\u0430\u043A
+        \u044D\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442,
+        \u043D\u0435 \u0437\u043D\u0430\u044E \u0434\u0430\u0436\u0435 \u044F, \u0435\u0433\u043E
+        \u0434\u043E\u0447\u044C, \u0447\u0442\u043E \u0443\u0436 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C
         \u043E\u0431 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0445."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[16].sentence
-      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E! \u042F \u0432\u043E\u0442,
-        \u0447\u0442\u043E \u0435\u0449\u0451 \u0445\u043E\u0442\u0435\u043B\u0430
-        \u0441\u043F\u0440\u043E\u0441\u0438\u0442\u044C: \u0441 \u0412\u0430\u0448\u0438\u043C
-        \u043F\u0438\u0441\u044C\u043C\u043E\u043C \u0431\u044B\u043B\u0430 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0430
-        \u0441\u0442\u0440\u0430\u043D\u043D\u0430\u044F \u0437\u0430\u043F\u0438\u0441\u043A\u0430,
-        \u044D\u0442\u043E \u0412\u044B \u043C\u043D\u0435 \u0435\u0451 \u043F\u043E\u0434\u043B\u043E\u0436\u0438\u043B\u0438?
-        \u0418 \u0432 \u0447\u0451\u043C \u0435\u0451 \u0441\u043C\u044B\u0441\u043B?"
+      propertyPath: sentences.Array.data[23].sentence
+      value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[17].sentence
-      value: "\u0410\u043D\u0447\u0438 (\u043D\u0435\u0442), \u043D\u0435 \u044F.
-        \u042D\u0442\u043E \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430
-        \u0431\u044B\u043B \u043C\u043E\u0439 \u0430\u0431\u0443\u0433\u0430 (\u043E\u0442\u0435\u0446).
-        \u0422\u0443\u0442 \u0436\u0435 \u043D\u0430\u0434\u043F\u0438\u0441\u044C
-        \u043F\u0440\u044F\u043C \u043A\u0430\u043A \u043D\u0430 \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435
-        \u043A \u0435\u0433\u043E \u0434\u043E\u043C\u0443. \u041F\u0435\u0440\u0435\u0432\u043E\u0434\u0438\u0442\u0441\u044F:
+      propertyPath: sentences.Array.data[24].sentence
+      value: "\u041A \u0432\u0430\u0448\u0435\u043C\u0443 \u043F\u0438\u0441\u044C\u043C\u0443
+        \u0431\u044B\u043B\u0430 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0430
+        \u0441\u0442\u0440\u0430\u043D\u043D\u0430\u044F \u0437\u0430\u043F\u0438\u0441\u043A\u0430,
+        \u044D\u0442\u043E \u043E\u0442 \u0432\u0430\u0441? \u0415\u0441\u043B\u0438
+        \u0434\u0430, \u0442\u043E \u0437\u0430\u0447\u0435\u043C?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[25].sentence
+      value: "\u0410\u043D\u0447\u0438 (\u043D\u0435\u0442), \u044F \u0435\u0451
+        \u043D\u0435 \u043F\u0438\u0441\u0430\u043B\u0430. \u042D\u0442\u043E \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430
+        \u0431\u044B\u043B \u043C\u043E\u0439 \u0430\u0431\u0443\u0433\u0430 (\u043E\u0442\u0435\u0446)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[26].sentence
+      value: "\u0418 \u0432\u043F\u0440\u0430\u0432\u0434\u0443, \u0442\u0443\u0442
+        \u043D\u0430\u0434\u043F\u0438\u0441\u044C \u043F\u0440\u044F\u043C \u043A\u0430\u043A
+        \u043D\u0430 \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u0435 \u043A
+        \u0435\u0433\u043E \u0434\u043E\u043C\u0443. \u042D\u0442\u043E \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u0438\u0442\u0441\u044F:
         \u043F\u043E \u044D\u0442\u043E\u0439 \u0434\u043E\u0440\u043E\u0436\u043A\u0435
         \u0448\u0430\u0433\u0430\u0439, \u043A \u043D\u0430\u0448\u0435\u043C\u0443
         \u0434\u043E\u043C\u0443 \u043F\u0440\u0438\u0434\u0451\u0448\u044C\xBB.
-        \u0410 \u0432\u043E\u043D \u0442\u0430\u043C \u0438 \u0441\u0430\u043C \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C
-        \u0441 \u0434\u043E\u0440\u043E\u0433\u043E\u0439. \u0414\u043E\u043C \u0443
-        \u043E\u0442\u0446\u0430 \u0441\u0430\u043C\u044B\u0439 \u0431\u043E\u043B\u044C\u0448\u043E\u0439,
-        \u0442\u043E\u0447\u043D\u043E \u043D\u0435 \u043F\u0435\u0440\u0435\u043F\u0443\u0442\u0430\u0435\u0448\u044C."
+        \u0410 \u0432\u043E\u043D \u0442\u0430\u043C \u0438 \u0441\u0430\u043C \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[18].sentence
+      propertyPath: sentences.Array.data[27].sentence
+      value: "\u0414\u043E\u043C \u0443 \u043E\u0442\u0446\u0430 \u0441\u0430\u043C\u044B\u0439
+        \u0431\u043E\u043B\u044C\u0448\u043E\u0439, \u0442\u043E\u0447\u043D\u043E
+        \u043D\u0435 \u043F\u0435\u0440\u0435\u043F\u0443\u0442\u0430\u0435\u0448\u044C.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[28].sentence
       value: "\u0420\u0430\u0437 \u043E\u043D \u043E\u0441\u0442\u0430\u0432\u0438\u043B
         \u0442\u0435\u0431\u0435 \u0437\u0430\u043F\u0438\u0441\u043A\u0443, \u0442\u043E
         \u043E\u043D \u0445\u043E\u0447\u0435\u0442 \u0441 \u0442\u043E\u0431\u043E\u0439
         \u043F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C. \u0421\u0442\u0443\u043F\u0430\u0439,
-        \u043C\u044B \u0435\u0449\u0451 \u0443\u0441\u043F\u0435\u0435\u043C \u043E\u0431\u0441\u0443\u0434\u0438\u0442\u044C
-        \u0432\u0441\u0451, \u0447\u0442\u043E \u0442\u0435\u0431\u0435 \u043D\u0443\u0436\u043D\u043E."
+        \u043C\u044B \u0435\u0449\u0451 \u0443\u0441\u043F\u0435\u0435\u043C \u0441
+        \u0442\u043E\u0431\u043E\u0439 \u043F\u043E\u0431\u0435\u0441\u0435\u0434\u043E\u0432\u0430\u0442\u044C."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
-      propertyPath: sentences.Array.data[19].sentence
+      propertyPath: sentences.Array.data[29].sentence
       value: "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435!
         \u0422\u043E\u0433\u0434\u0430 \u044F \u043F\u043E\u0439\u0434\u0443."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[30].sentence
+      value: "\u041A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u043E \u043C\u043E\u0439
+        \u0430\u0431\u0443\u0433\u0430, \u043E\u0442\u0435\u0446, \u043F\u043E-\u0432\u0430\u0448\u0435\u043C\u0443,
+        \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442 \u043D\u0430\u043C \u0432
+        \u0442\u0440\u0443\u0434\u043D\u044B\u0445 \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\u0445,
+        \u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043A\u043E\u0433\u0434\u0430
+        \u043A\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435\u0442."
       objectReference: {fileID: 0}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
@@ -6057,7 +7169,7 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[2].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[3].dialogueCharacter
       value: 
@@ -6073,11 +7185,11 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[6].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[7].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[8].dialogueCharacter
       value: 
@@ -6085,11 +7197,11 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[9].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[10].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[11].dialogueCharacter
       value: 
@@ -6097,11 +7209,11 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[12].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[13].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[14].dialogueCharacter
       value: 
@@ -6109,11 +7221,11 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[15].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[16].dialogueCharacter
       value: 
-      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[17].dialogueCharacter
       value: 
@@ -6125,7 +7237,51 @@ PrefabInstance:
     - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
       propertyPath: sentences.Array.data[19].dialogueCharacter
       value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[20].dialogueCharacter
+      value: 
       objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[21].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[22].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[23].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[24].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[25].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[26].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[27].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[28].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[29].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: eadabd93a3cc2864b985142bc9371643, type: 2}
+    - target: {fileID: 8557568673631317014, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+      propertyPath: sentences.Array.data[30].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: fd37bb61a18405a4d88f8d585cab4dd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6898,6 +8054,84 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1531102846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531102848}
+  - component: {fileID: 1531102847}
+  m_Layer: 0
+  m_Name: LeftBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1531102847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531102846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.1656914}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 11.17667}
+  m_EdgeRadius: 0
+--- !u!4 &1531102848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531102846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.31, y: 4.030649, z: 1.8990561}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2144804454}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544379246
 GameObject:
   m_ObjectHideFlags: 0
@@ -7279,6 +8513,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 472437040}
   parallax: 0.7
+--- !u!1 &1649526331
+GameObject:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649526332}
+  - component: {fileID: 1649526334}
+  - component: {fileID: 1649526333}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1649526332
+Transform:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649526331}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 669879655}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1649526333
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649526331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0.3
+  m_LookaheadSmoothing: 10
+  m_LookaheadIgnoreY: 1
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.63
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0.13
+  m_DeadZoneHeight: 0.1
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
+--- !u!114 &1649526334
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649526331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650936476
 GameObject:
   m_ObjectHideFlags: 0
@@ -8453,7 +9775,7 @@ Transform:
   - {fileID: 312140678}
   - {fileID: 300681500}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960111463
 GameObject:
@@ -9304,77 +10626,12 @@ Transform:
   - {fileID: 1956127738}
   - {fileID: 879555801}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1273688168061346483
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 472437043}
-    m_Modifications:
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6504963138490738507, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1803676006}
-    - target: {fileID: 8634993359963188181, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-      propertyPath: m_Name
-      value: Virtual Camera
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
---- !u!4 &1273688168061346484 stripped
+--- !u!4 &2144804454 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2034084435352599893, guid: e2b2f91d613e556468f601c946ee47fc, type: 3}
-  m_PrefabInstance: {fileID: 1273688168061346483}
+  m_CorrespondingSourceObject: {fileID: 6297276050750010171, guid: a0dbeffc84669e24f994d387893a803d, type: 3}
+  m_PrefabInstance: {fileID: 978362234}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1787634388611381530
 PrefabInstance:
@@ -9390,15 +10647,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.44
+      value: -10.6
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.37
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 5717959853725070912, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9437,67 +10694,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d5fbcb0d15e52b4291295882c49dffa, type: 3}
---- !u!1001 &3391343673415952433
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4232389062460440662, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_Name
-      value: Borders
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -19.287119
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.4040737
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.14772733
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6394114613346568514, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aeedf911143c9ed41afc77acb0b7b20b, type: 3}
 --- !u!1001 &6588250769302823170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9516,7 +10712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3245120546460483456, guid: 68e1853b0d9176e4c80a88939af8b749, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3245120546460483456, guid: 68e1853b0d9176e4c80a88939af8b749, type: 3}
       propertyPath: m_AnchorMax.x
